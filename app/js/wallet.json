@@ -1,0 +1,11 @@
+[
+["bitcoin.png", "2.000360", "Bitcoin", "#fb9c01", "$20.000.00", 36],
+["Ethereum.png", "30.08900", "Ethereum", "#7a92a2", "$8.600.00", 22],
+["bitcoin_cash.png", "689.0520", "Bitcoin Cash", "#fb8201", "$2.060.00", 20],
+  ["Ripple.png", "200.290", "Ripple", "#058dd3", "$680.00", 9],
+  ["Binance.png", "390.080", "Binance", "#f3ba2e", "$230.00", 8],
+  ["Namecoin.png", "2030.230", "Namecoin", "#6787b7", "$220.00", 3],
+  ["Verge.png", "2030.36", "Verge", "#25b9c5", "$200", 2],
+  ["Iconomi.png", "60.0360", "Iconomi", "#8949e3", "$90", 2],
+  ["VeChain.png", "380.0360", "VeChain", "#767fd2", "$60", 1]
+ ]

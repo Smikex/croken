@@ -1,0 +1,5 @@
+[
+  [{"img":"bitcoin.png", "amount":"2.000360", "name":"Bitcoin", "color":"#fb9c01", "price":"$20.000.00", "percent": 36}],
+  ["ico":"Ethereum.png", "amount":"30.08900", "name":"Ethereum", "color":"#fb9c01", "cost":"$8.600.00", "percent":"22"],
+  ["ico":"bitcoin_cash.png", "amount":"689.0520", "name":"Bitcoin Cash", "color":"#fb8201", "cost":"$2.060.00", "percent":"20"]
+]

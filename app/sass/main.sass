@@ -9,9 +9,9 @@ body
   font-family: OpenSans
   font-size: 14px
   color: #fff
-  margin-bottom: 100px
+  //margin-bottom: 100px
 
-a:focus, a:hover
+a:focus, a:hover, button:hover
   text-decoration: none
   opacity: 0.7
 header
@@ -210,7 +210,7 @@ header
   justify-content: center
   img
     height: 61px
-    margin: 3px
+    margin: 3px !important
 
 .sign_up_autentificator
   padding-top: 5vh
@@ -224,7 +224,7 @@ header
     font-family: Proxima Nova
     font-size: 25px
     text-align: center
-    padding-bottom: 21px
+    padding-bottom: 2px
   h2
     font-family: Proxima Nova
     font-size: 25px
@@ -233,7 +233,10 @@ header
     padding-bottom: 38px
   p
     font-size: 16px
-    padding-bottom: 11px
+    padding-bottom: 6px
+    span
+      font-size: 14px
+      color: #0d8b41
   p
     img
       display: inline-block
@@ -243,16 +246,34 @@ header
     display: flex
     margin: auto
     margin-top: 43px
-    margin-bottom: 36px
-  textarea
-    width: 255px
+    margin-bottom: 23px
+  textarea, input
+    width: 313px
     background-color: #162a38
     border: 1px solid #3a5364
-    color: #fff
+    color: #577080
     margin: auto
-    padding: 11px 0
+    padding: 6px 0
+    margin-bottom: 15px
     border-radius: 0.25rem
-    font-size: 14px
+    //font-size: 18px
+    text-align: center
+  input
+    padding: 14px
+    margin-bottom: 5px
+  button
+    margin-top: 16px
+    padding: 14px 124px
+    background: #0d8b41
+    font-family: Proxima Nova
+    font-size: 25px
+    color: #fff
+    width: 313px
+  .cancel_btn
+    background: transparent
+    border: none
+    color: #0d8b41
+    outline-color: transparent
 
 
 
@@ -269,3 +290,239 @@ footer
   span
     color: #577080
     padding-bottom: 50px
+
+
+    //icons
+
+
+[class^="icon-"], [class*=" icon-"]
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+  outline: none
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.icon-2:before
+  content: "\e900"
+
+.icon-1:before
+  content: "\e901"
+
+.icon-3:before
+  content: "\e902"
+
+.icon-4:before
+  content: "\e904"
+
+.icon-5:before
+  content: "\e905"
+
+.icon-6:before
+  content: "\e907"
+
+.icon-balans:before
+  content: "\e909"
+
+.icon-login:before
+  content: "\e90b"
+
+
+.employer:after
+  content: ''
+  display: table
+  clear: both
+
+.wrapper-section
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  justify-content: space-between
+  a
+    text-decoration: none
+    color:  #717a7a
+  &:hover,
+  &:active,
+  &:focus
+    text-decoration: none
+    outline: none
+    color: green
+  ol, ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+img
+  height: auto
+  max-width: 100%
+  border:none
+
+
+
+.view-section
+  width: calc(100% - 260px)
+  background: #233644
+
+/*** .sidebar ***/
+.sidebar
+  width: 260px
+  overflow: hidden
+  .sidebar-wrapper
+    height: 100vh
+    padding: 40px 0
+    width: calc(100% + 26px)
+    background: #162a38
+    overflow-y: scroll
+    overflow-x: hidden
+
+  .logo
+    width: 260px
+    margin-bottom: 64px
+    font-size: 0
+    text-align: center
+    img
+      display: inline-block
+
+  .main-menu
+    li
+      //padding-bottom: 16px
+      list-style-type: none
+    a
+      display: block
+      padding: 26px 59px
+      font-size: 17px
+      color: #fff
+      &:hover
+        background: #233644
+        i
+          color: #2daa47
+    i
+      padding-right: 15px
+      font-size: 28px
+      transition-duration: 0.2s
+    span
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+
+  .copyright
+    padding-top: 100px
+    padding-left: 58px
+    font-size: 13px
+    color: #fff
+    p
+      margin: 0
+    span
+      color: #5a707f
+
+.nav-pills .nav-link.active, .nav-pills .nav-item.show.nav-link
+  background-color: #233644 !important
+#v-pills-home
+  display: flex
+  flex-direction: column
+  align-items: center
+  img
+    width: 323px
+    height: 252px
+    margin-top: 22vh
+  h1
+    font-family: "Proxima Nova"
+    font-size: 53px
+    font-weight: 100
+    color: #fff
+    margin-top: 74px
+    margin-bottom: 44px
+  p
+    font-size: 17px
+    font-weight: 400
+    color: #fff
+    button
+      text-transform: uppercase
+      width: 186px
+      height: 38px
+      border-radius: 3px
+      border: 1px solid #ffffff
+      background-color: transparent
+      color: #fff
+      font-size: 12px
+      font-weight: 700
+      margin-left: 9px
+.circle_diagram
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 300px
+  height: 300px
+  border-radius: 50%
+  background-color: #162a38
+  text-align: center
+  box-shadow: 0px 0px 0px 32px rgba(0,0,0,0.18);
+  border: 1px solid #162a38
+  background-clip: padding-box
+  h1
+    color: #fff
+    font-weight: bold
+    font-size: 60px
+    margin-top: -24px
+  p
+    margin-bottom: 0
+    padding-top: 68px
+    font-size: 20px
+    font-weight: 400
+    line-height: 80px
+    color: #fff
+.coins
+  display: flex
+  justify-content: space-around
+  //align-self: flex-end
+  p
+    color: #fff
+    font-size: 15px
+  img
+    //width: 60px
+.coin
+  padding: 0 30px
+  //flex-basis: 20%
+  text-align: center
+  .amount
+    font-weight: 700
+    margin-top: 9px
+    margin-bottom: -2px
+  .name
+    font-weight: 400
+    margin-bottom: 8px
+  .price
+    color: #fb9c01
+    margin-top: 6px
+    margin-bottom: -2px
+  .percent
+    color: #657b8a
+
+
+.diagram_wrap
+.coin_color_line
+  margin: auto
+  width: 42px
+  height: 4px
+.bitcoin_color
+  background-color: #fb9c01
+  border-radius: 2px
+
+#v-pills-home.fade
+  display: none
+#v-pills-home.show
+  display: flex
+.coins_wrap
+  margin-top: 15vh

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Main</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+</head>
+<body>
+
+<section class="wrapper-section">
+
+    <!-- .side-bar -->
+    <div class="sidebar">
+
+        <div class="sidebar-wrapper">
+
+            <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+
+            <!-- .main-menu -->
+            <nav class="main-menu">
+                <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <li><a class="nav-link " id="v-pills-Portfolio-tab" data-toggle="pill" href="#v-pills-Portfolio"
+                           role="tab" aria-controls="v-pills-Portfolio" aria-selected="true"><span><i
+                            class="icon-1"></i>Portfolio</span></a>
+                    </li>
+                    <li><a class="nav-link" id="v-pills-Wallet-tab" data-toggle="pill" href="#v-pills-Wallet"
+                           role="tab" aria-controls="v-pills-Wallet" aria-selected="false"><span><i class="icon-2"></i>Wallet</span></a>
+                    </li>
+                    <li><a class="nav-link" id="v-pills-Exchange-tab" data-toggle="pill" href="#v-pills-Exchange"
+                           role="tab" aria-controls="v-pills-Exchange" aria-selected="false"><span><i
+                            class="icon-3"></i>Exchange</span></a></li>
+                    <li><a class="nav-link" id="v-pills-Backup-tab" data-toggle="pill" href="#v-pills-Backup"
+                           role="tab" aria-controls="v-pills-Backup" aria-selected="false"><span><i
+                            class="icon-4"></i>Backup</span></a></li>
+                    <li><a class="nav-link" id="v-pills-Settings-tab" data-toggle="pill" href="#v-pills-Settings"
+                           role="tab" aria-controls="v-pills-Settings" aria-selected="false"><span><i
+                            class="icon-5"></i>Settings</span></a></li>
+                    <li><a class="nav-link" id="v-pills-Help-tab" data-toggle="pill" href="#v-pills-Help"
+                           role="tab" aria-controls="v-pills-Help" aria-selected="false"><span><i
+                            class="icon-6"></i>Help</span></a></li>
+
+
+                </ul>
+            </nav><!-- End .main-menu -->
+
+            <div class="copyright"><p>Copyright © Croken</p><span>Privacy Policy</span></div>
+        </div>
+
+    </div><!-- End .side-bar -->
+
+
+    <!-- .view-section -->
+    <div class="view-section">
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <img src="img/crok_back.png" alt="">
+                <h1>Welcome to Croken!</h1>
+                <p>Get started by sending assets to your wallet or
+                    <button>restore from backup</button>
+                </p>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-Portfolio" role="tabpanel" aria-labelledby="v-pills-Portfolio-tab">
+                <div class="row coins_wrap">
+                    <div class="col-7 diagram_wrap">
+                        <div id="diagram"></div>
+                        <div class="circle_diagram">
+                            <p>Total Value</p>
+                            <h1>$60.830</h1>
+                        </div>
+                    </div>
+                    <div class=" col-5 coins">
+
+                        <div class=" coin">
+                            <img src="img/bitcoin.png" alt="">
+                            <p class="amount">2.000360</pc>
+                            <p class="name">Bitcoin</p>
+                            <div class="coin_color_line bitcoin_color"></div>
+                            <p class="price">$20.000.00</p>
+                            <p class="percent">36%</p>
+                        </div>
+                        <div class="  coin">
+                            <img src="img/Ethereum.png" alt="">
+                            <p class="amount">2.000360</pc>
+                            <p class="name">Bitcoin</p>
+                            <div class="coin_color_line bitcoin_color"></div>
+                            <p class="price">$20.000.00</p>
+                            <p class="percent">36%</p>
+                        </div>
+                        <div class=" coin">
+                            <img src="img/Binance.png" alt="">
+                            <p class="amount">2.000360</pc>
+                            <p class="name">Bitcoin</p>
+                            <div class="coin_color_line bitcoin_color"></div>
+                            <p class="price">$20.000.00</p>
+                            <p class="percent">36%</p>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-Wallet" role="tabpanel" aria-labelledby="v-pills-Wallet-tab">2
+            </div>
+            <div class="tab-pane fade" id="v-pills-Exchange" role="tabpanel" aria-labelledby="v-pills-Exchange-tab">3
+            </div>
+            <div class="tab-pane fade" id="v-pills-Backup" role="tabpanel" aria-labelledby="v-pills-Backup-tab">4
+            </div>
+            <div class="tab-pane fade" id="v-pills-Settings" role="tabpanel" aria-labelledby="v-pills-Settings-tab">4
+            </div>
+            <div class="tab-pane fade" id="v-pills-Help" role="tabpanel" aria-labelledby="v-pills-Help-tab">Help
+            </div>
+        </div>
+    </div><!-- End .view-section -->
+
+</section>
+
+<!--<footer class="footer">-->
+<!--<div class="container">-->
+<!--<p>2018 © Croken</p>-->
+<!--<p><span>All Rights Reserved</span></p>-->
+<!--</div>-->
+<!--</footer>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="js/libs.min.js"></script>
+<script>
+
+    $.getJSON('js/wallet.json', function (data) {
+
+        var ChartData = [
+            {"name": data[0][2], "y": data[0][5], "color": data[0][3]},
+            {"name": data[1][2], "y": data[1][5], "color": data[1][3]},
+            {"name": data[2][2], "y": data[2][5], "color": data[2][3]},
+            {"name": data[3][2], "y": data[3][5], "color": data[3][3]},
+            {"name": data[4][2], "y": data[4][5], "color": data[4][3]},
+            {"name": data[5][2], "y": data[5][5], "color": data[5][3]},
+            {"name": data[6][2], "y": data[6][5], "color": data[6][3]},
+            {"name": data[7][2], "y": data[7][5], "color": data[7][3]},
+            {"name": data[8][2], "y": data[8][5], "color": data[8][3]}
+        ];
+        Highcharts.chart('diagram', {
+            credits: {
+                enabled: false
+            },
+            navigation: {
+                buttonOptions: {
+                    enabled: false
+                }
+            },
+            chart: {
+                backgroundColor: 'rgba(255, 255, 255, 0.0)',
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie',
+                height: "600px"
+            },
+            title: {
+                text: ' '
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    borderColor: 'transparent',
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                showInLegend: false,
+                name: 'Brands',
+                colorByPoint: true,
+                data: ChartData
+            }]
+        });
+    });
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+</body>
+
+</html>
+
