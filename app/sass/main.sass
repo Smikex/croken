@@ -9,11 +9,13 @@ body
   font-family: OpenSans
   font-size: 14px
   color: #fff
-  //margin-bottom: 100px
-
+  margin-bottom: 100px
+a
+  color: #fff
 a:focus, a:hover, button:hover
   text-decoration: none
   opacity: 0.7
+  color: #fff
 header
   padding-top: 28px
   a
@@ -34,7 +36,7 @@ header
 .log_in, .forgot_password, .sign_up_account
   margin: auto
   padding-top: 18vh
-  width: 318px
+  max-width: 318px
   display: flex
   flex-direction: column
   justify-content: center
@@ -56,7 +58,7 @@ header
       padding: 16px
     button
       margin-top: 16px
-      padding: 14px 124px
+      padding: 14px
       background: #0d8b41
       font-family: Proxima Nova
       font-size: 25px
@@ -87,7 +89,6 @@ header
       padding: 14px 106px
 
 .login_confirm
-  width: 472px
   padding-top: 22vh
   display: flex
   flex-direction: column
@@ -114,10 +115,16 @@ header
     padding: 11px 0
     border-radius: 0.25rem
     font-size: 16px
+#myTab
+  a
+    display: flex
+  a:hover
+    color: #00963f
+.nav-tabs
+   border-bottom: none
 
 .sign_up
-
-  padding-top: 14vh
+  padding-top: 4vh
   display: flex
   flex-direction: column
   ul
@@ -131,6 +138,7 @@ header
     list-style-type: none
     flex-basis: 30%
     display: flex
+    opacity: 0.3
     img
       height: 50px
       width: 50px
@@ -141,6 +149,9 @@ header
 
 .active
   font-weight: bold
+  opacity: 1 !important
+.visited
+  color: #00963f
 
 .sign_up_account
   padding-top: 0
@@ -159,6 +170,13 @@ header
       font-size: 12px
     p:last-child
       color: #0d8b41
+
+.fade
+  .sign_up_account
+  display: none
+.fade.show
+  .sign_up_account
+  display: flex
 
 #confirmPassword
   margin: 19px 0
@@ -214,11 +232,10 @@ header
 
 .sign_up_autentificator
   padding-top: 5vh
-  width: 600px
   form
     display: flex
     flex-direction: column
-    width: 313px
+    max-width: 313px
     margin: auto
   h1
     font-family: Proxima Nova
@@ -248,12 +265,11 @@ header
     margin-top: 43px
     margin-bottom: 23px
   textarea, input
-    width: 313px
+    max-width: 313px
     background-color: #162a38
     border: 1px solid #3a5364
     color: #577080
-    margin: auto
-    padding: 6px 0
+    padding: 6px
     margin-bottom: 15px
     border-radius: 0.25rem
     //font-size: 18px
@@ -263,12 +279,12 @@ header
     margin-bottom: 5px
   button
     margin-top: 16px
-    padding: 14px 124px
+    padding: 14px
     background: #0d8b41
     font-family: Proxima Nova
     font-size: 25px
     color: #fff
-    width: 313px
+    //width: 313px
   .cancel_btn
     background: transparent
     border: none
@@ -374,7 +390,7 @@ img
 
 /*** .sidebar ***/
 .sidebar
-  width: 260px
+  //width: 260px
   overflow: hidden
   .sidebar-wrapper
     height: 100vh
@@ -423,8 +439,9 @@ img
     color: #fff
     p
       margin: 0
-    span
+    p:nth-child(2)
       color: #5a707f
+
 
 .nav-pills .nav-link.active, .nav-pills .nav-item.show.nav-link
   background-color: #233644 !important
@@ -432,6 +449,7 @@ img
   display: flex
   flex-direction: column
   align-items: center
+  text-align: center
   img
     width: 323px
     height: 252px
@@ -495,8 +513,9 @@ img
   img
     //width: 60px
 .coin
-  padding: 0 30px
+  flex: 0 0 26%
   text-align: center
+  margin: 12px auto
   img
     align-self: flex-start
     width: 40px
@@ -602,6 +621,7 @@ img
   padding: 3px 8px
   img
     padding: 3px
+    margin-right: 3px
   p
     margin-bottom: 0
   &.dropdown-toggle::after
@@ -647,3 +667,6 @@ img
     color: #657b8a
     font-size: 11px
     font-weight: 700
+
+
+@import "media.sass"

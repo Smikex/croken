@@ -1,0 +1,116 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width : 576px)
+  /**/
+
+// Medium devices (tablets, 768px and up)
+@media (min-width : 768px)
+  /**/
+
+// Large devices (desktops, 992px and up)
+@media (min-width : 992px)
+  /**/
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width : 1200px)
+  /**/
+@media (max-width : 395.98px)
+  #diagram
+    margin-top: -75px
+    margin-bottom: -195px
+  .log_in, .forgot_password, .sign_up_account, .login_confirm, .sign_up
+    padding-top: 4vh
+  .apps
+    flex-direction: column
+    margin: auto
+    img
+      width: 175px
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width : 575.98px)
+  .sign_up
+    ul
+      flex-direction: column
+      align-items: flex-start
+      padding-bottom: 5px
+      li
+        margin: 10px
+
+  #diagram
+    margin-top: -45px
+    margin-bottom: -100px
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width : 767.98px)
+  #diagram
+    //margin-top: -10vh
+    //margin-bottom: -28vh
+  .circle_diagram
+    position: relative
+    top: auto
+    left: auto
+    transform: none
+    width: auto
+    height: auto
+    box-shadow: none
+    background: none
+    border: none
+    p
+      padding-top: 0
+  .coins_wrap
+    margin-top: 1vh
+  .view-section
+    width: 100%
+  .sidebar
+    width: 100px
+    .copyright
+      padding-left: 16px
+      p:nth-child(2)
+        padding-right: 25px
+    .nav-link.active
+      color: transparent
+    .logo
+      width: 85px
+    .main-menu
+      a
+
+        padding: 15px
+        padding-left: 27px
+        color: transparent
+        i
+          color: #fff
+  .diagram_wrap
+    //display: none
+  //.circle_diagram
+  //  display: none
+  .user_menu
+    flex-direction: column
+    align-items: center
+    .user
+      margin-top: 20px
+  .coin
+    margin-bottom: 25px
+    flex: 0 0 45%
+  #v-pills-home
+    img
+      margin-top: 3vh
+      width: 70%
+      height: auto
+    h1
+      margin: 7%
+    p
+      padding: 15px
+    button
+      margin-top: 25px
+
+// Medium devices (tablets, less than 992px)
+@media (max-width : 991.98px)
+  /**/
+// Large devices (desktops, less than 1200px)
+@media (max-width : 1199.98px)
+  /**/
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
