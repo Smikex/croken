@@ -435,7 +435,7 @@ img
   img
     width: 323px
     height: 252px
-    margin-top: 22vh
+    margin-top: 20vh
   h1
     font-family: "Proxima Nova"
     font-size: 53px
@@ -486,7 +486,9 @@ img
 .coins
   display: flex
   justify-content: space-around
-  //align-self: flex-end
+  align-items: flex-end
+  flex-wrap: wrap
+
   p
     color: #fff
     font-size: 15px
@@ -494,8 +496,10 @@ img
     //width: 60px
 .coin
   padding: 0 30px
-  //flex-basis: 20%
   text-align: center
+  img
+    align-self: flex-start
+    width: 40px
   .amount
     font-weight: 700
     margin-top: 9px
@@ -504,9 +508,29 @@ img
     font-weight: 400
     margin-bottom: 8px
   .price
-    color: #fb9c01
+    background-color: transparent
     margin-top: 6px
     margin-bottom: -2px
+    &.color_bitcoin
+      color: #fb9c01
+    &.color_ethereum
+      color: #7a92a2
+    &.color_bitcoin_cash
+      color: #fb8201
+    &.color_Ripple
+      color: #058dd3
+    &.color_Binance
+      color: #f3ba2e
+    &.color_Namecoin
+      color: #6787b7
+    &.color_Verge
+      color: #25b9c5
+    &.color_Iconomi
+      color: #8949e3
+    &.color_VeChain
+      color: #767fd2
+
+
   .percent
     color: #657b8a
 
@@ -516,9 +540,26 @@ img
   margin: auto
   width: 42px
   height: 4px
-.bitcoin_color
-  background-color: #fb9c01
   border-radius: 2px
+
+.color_bitcoin
+  background-color: #fb9c01
+.color_ethereum
+  background-color: #7a92a2
+.color_bitcoin_cash
+  background-color: #fb8201
+.color_Ripple
+  background-color: #058dd3
+.color_Binance
+  background-color: #f3ba2e
+.color_Namecoin
+  background-color: #6787b7
+.color_Verge
+  background-color: #25b9c5
+.color_Iconomi
+  background-color: #8949e3
+.color_VeChain
+  background-color: #767fd2
 
 #v-pills-home.fade
   display: none
@@ -526,3 +567,83 @@ img
   display: flex
 .coins_wrap
   margin-top: 15vh
+.user_menu
+  margin-top: 20px
+  display: flex
+  justify-content: flex-end
+  .dropdown.show
+
+    .btn_wallet
+      background-color: #162a38
+      border-top-left-radius: 4px
+      border-top-right-radius: 4px
+      border-bottom-left-radius: 0
+      border-bottom-right-radius: 0
+      border: 1px solid #162a38
+      opacity: 1
+  .dropdown-menu
+    background-color: #162a38
+    &.show
+      padding-left: 25px
+      width: 216px
+      border-top-right-radius: 0
+      border-top: none
+      margin-top: 0
+      margin-left: -123px
+
+.btn_wallet
+  border-radius: 3px
+  border: 1px solid #3a5364
+  background-color: transparent
+  display: flex
+  color: #fff
+  font-size: 14px
+  font-weight: 700
+  padding: 3px 8px
+  img
+    padding: 3px
+  p
+    margin-bottom: 0
+  &.dropdown-toggle::after
+    content: none
+.user
+  display: flex
+  margin-right: 30px
+  margin-left: 20px
+  padding: 3px
+  p
+    margin-bottom: 0
+    color: #fff
+  a
+    margin-left: 10px
+.wallet-item
+  p:first-child
+    font-size: 14px
+    font-weight: 700
+    color: #fff
+    margin-bottom: 0
+    span
+      margin-left: 15px
+      background-color: transparent !important
+      &.color_bitcoin
+        color: #fb9c01
+      &.color_ethereum
+        color: #7a92a2
+      &.color_bitcoin_cash
+        color: #fb8201
+      &.color_Ripple
+        color: #058dd3
+      &.color_Binance
+         color: #f3ba2e
+      &.color_Namecoin
+         color: #6787b7
+      &.color_Verge
+         color: #25b9c5
+      &.color_Iconomi
+         color: #8949e3
+      &.color_VeChain
+         color: #767fd2
+  p
+    color: #657b8a
+    font-size: 11px
+    font-weight: 700
