@@ -24,33 +24,27 @@
         <li class="active visited">
             <img src="img/4.svg" alt=""><p>Email </br>Confirmation</p>
         </li>
-        <li >
+        <li class="active">
             <img src="img/3.svg" alt=""><p>IP binding and Google Authentication</p>
         </li>
     </ul>
 </div>
 
 
-<div id="" class="sign_up_autentificator  login_confirm">
-    <h2>Your IP Address has been succesfully verified</h2>
-    <h1>Add Google Auth</h1>
-    <p>Use Google Authenticator to scan the code below</p>
-    <div class="apps">
-        <a href="https://www.apple.com/ios/app-store/"><img src="img/apple.svg" alt=""></a>
-        <a href="https://play.google.com/store"><img src="img/google play.svg" alt=""></a>
-    </div>
-    <img src="img/qr.png" alt="">
-    <p>Print and Save the Code Below <img src="img/rect.png" alt=""></p>
-    <form method="get" action="sign_up_confirmation_ip.html">
-        <textarea name="name" rows="2">U7R3B3VFZ4TY7SWIUTSO6SNHCCRZWCE
-C3F4P25L755BHV4TBM7TQ</textarea>
 
-        <p>Enter your Two Factor Authentication code below</p>
-        <input type="text">
-        <p><span>Get a new code</span></p>
-        <button type="submit" class="btn btn-block">Submit</button>
-        <button class="cancel_btn">Cancel</button>
+
+
+<div class="sign_up_confirm_ip login_confirm" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <h1><span>Your email has ben succesfully verified</span> Now you need to authorize your IP Address</h1>
+    <p>Click the link in your email to confirm your IP Address. If you can't find the email check your spam folder or click the link below to send.</p>
+    <form method="get" action="login_confirm.html">
+        <button>Resend Email</button>
     </form>
+
+
+    <div class="email_sent">
+        <p><img src="img/ok.png" alt="">Email has been resend</p>
+    </div>
 </div>
 
 
