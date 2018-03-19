@@ -4,6 +4,7 @@
 html
   position: relative
   min-height: 100%
+
 body
   background: #162a38
   font-family: OpenSans
@@ -17,21 +18,32 @@ textarea, input
   &:active
     outline: none
     box-shadow: none
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+input[type='number']
+  -moz-appearance: textfield
+
 a
   color: #fff
   cursor: pointer
+
 button
   cursor: pointer
+
 a:focus, a:hover, button:hover
   text-decoration: none
   opacity: 0.7
   color: #fff
   outline: none
+
 header
   padding-top: 28px
   a
     display: flex
     justify-content: center
+
 .incorect_email
   background-color: #27242e
   border: 1px solid #dc3737
@@ -44,6 +56,7 @@ header
     margin-bottom: 0
     font-size: 13px
     padding: 5px 12px
+
 .log_in, .forgot_password, .sign_up_account
   margin: auto
   padding-top: 18vh
@@ -126,20 +139,22 @@ header
     padding: 11px 0
     border-radius: 0.25rem
     font-size: 16px
+
 #myTab
   a
     display: flex
   a:hover
     color: #00963f
+
 .nav-tabs
-   border-bottom: none
+  border-bottom: none
 
 .sign_up
   padding-top: 4vh
   display: flex
   flex-direction: column
   ul
-    display:  flex
+    display: flex
     justify-content: space-around
     padding-bottom: 35px
     padding-left: 0
@@ -162,6 +177,7 @@ header
 .active
   font-weight: bold
   opacity: 1 !important
+
 .visited
   color: #00963f
 
@@ -187,19 +203,20 @@ header
 
 .fade
   .sign_up_account
-  display: none
+    display: none
+
 .fade.show
   .sign_up_account
-  display: flex
+    display: flex
 
 #confirmPassword
   margin: 19px 0
+
 .lines
   display: flex
   justify-content: center
   padding: 19px 0
   padding-bottom: 10px
-
 
 .line
   width: 34px
@@ -222,6 +239,7 @@ header
   padding-top: 6vh
   span
     color: #00963f
+
 .email_sent
   position: fixed
   right: 30px
@@ -298,14 +316,12 @@ header
     font-family: Proxima Nova
     font-size: 25px
     color: #fff
-    //width: 313px
+  //width: 313px
   .cancel_btn
     background: transparent
     border: none
     color: #0d8b41
     outline-color: transparent
-
-
 
 footer
   position: absolute
@@ -321,8 +337,7 @@ footer
     color: #577080
     padding-bottom: 50px
 
-
-    //icons
+//icons
 
 
 [class^="icon-"], [class*=" icon-"]
@@ -364,7 +379,6 @@ footer
 .icon-login:before
   content: "\e90b"
 
-
 .employer:after
   content: ''
   display: table
@@ -379,7 +393,7 @@ footer
   justify-content: space-between
   a
     text-decoration: none
-    color:  #717a7a
+    color: #717a7a
   &:hover,
   &:active,
   &:focus
@@ -395,8 +409,6 @@ img
   height: auto
   max-width: 100%
   border:none
-
-
 
 .view-section
   width: calc(100% - 260px)
@@ -456,9 +468,9 @@ img
     p:nth-child(2)
       color: #5a707f
 
-
 .nav-pills .nav-link.active, .nav-pills .nav-item.show.nav-link
   background-color: #233644 !important
+
 #v-pills-home
   display: flex
   flex-direction: column
@@ -490,6 +502,7 @@ img
       font-size: 12px
       font-weight: 700
       margin-left: 9px
+
 .circle_diagram
   position: absolute
   top: 50%
@@ -500,7 +513,7 @@ img
   border-radius: 50%
   background-color: #162a38
   text-align: center
-  box-shadow: 0px 0px 0px 32px rgba(0,0,0,0.18);
+  box-shadow: 0px 0px 0px 32px rgba(0, 0, 0, 0.18);
   border: 1px solid #162a38
   background-clip: padding-box
   h1
@@ -515,6 +528,7 @@ img
     font-weight: 400
     line-height: 80px
     color: #fff
+
 .coins
   display: flex
   justify-content: space-around
@@ -525,7 +539,7 @@ img
     color: #fff
     font-size: 15px
   img
-    //width: 60px
+//width: 60px
 .coin
   flex: 0 0 26%
   text-align: center
@@ -563,12 +577,11 @@ img
     &.color_VeChain
       color: #767fd2
 
-
   .percent
     color: #657b8a
 
-
 .diagram_wrap
+
 .coin_color_line
   margin: auto
   width: 42px
@@ -577,29 +590,40 @@ img
 
 .color_bitcoin
   background-color: #fb9c01
+
 .color_ethereum
   background-color: #7a92a2
+
 .color_bitcoin_cash
   background-color: #fb8201
+
 .color_Ripple
   background-color: #058dd3
+
 .color_Binance
   background-color: #f3ba2e
+
 .color_Namecoin
   background-color: #6787b7
+
 .color_Verge
   background-color: #25b9c5
+
 .color_Iconomi
   background-color: #8949e3
+
 .color_VeChain
   background-color: #767fd2
 
 #v-pills-home.fade
   display: none
+
 #v-pills-home.show
   display: flex
+
 .coins_wrap
   margin-top: 5vh
+
 .user_menu
   margin-top: 20px
   display: flex
@@ -640,6 +664,7 @@ img
     margin-bottom: 0
   &.dropdown-toggle::after
     content: none
+
 .user
   display: flex
   margin-right: 30px
@@ -650,6 +675,8 @@ img
     color: #fff
   a
     margin-left: 10px
+.wallets_coins_main
+  display: block
 .wallet-item
   p:first-child
     font-size: 14px
@@ -668,15 +695,15 @@ img
       &.color_Ripple
         color: #058dd3
       &.color_Binance
-         color: #f3ba2e
+        color: #f3ba2e
       &.color_Namecoin
-         color: #6787b7
+        color: #6787b7
       &.color_Verge
-         color: #25b9c5
+        color: #25b9c5
       &.color_Iconomi
-         color: #8949e3
+        color: #8949e3
       &.color_VeChain
-         color: #767fd2
+        color: #767fd2
   p
     color: #657b8a
     font-size: 11px
@@ -684,9 +711,15 @@ img
 
 //wallet
 
+
 .wallet_coins
   height: 100%
   border-right: 1px solid #2f4758
+  &_wrap
+    display: flex
+
+  a
+    color: #fff
 
   ul
     display: flex
@@ -711,9 +744,34 @@ img
       color: #fff
       background: transparent
       border: none
+
+.wallet_coin
+  width: 100%
+
 .operations
-  padding-top: 97px
+  padding-top: 30px
   padding-bottom: 33px
+  text-align: center
+  &_button
+    &_left
+      border-radius: 5px
+      background-color: #2daa47
+      padding: 24px
+    &_right
+      border-radius: 5px
+      background-color: #a4b45c
+      padding: 24px
+
+  &_img
+    width: 166px
+    height: 203px
+  &_h1
+    color: #ffffff
+    font-size: 43px
+    font-weight: 700
+  &_h2
+    color: #2daa47
+    font-size: 28px
   ul
     display: flex
     justify-content: space-around
@@ -722,8 +780,297 @@ img
       color: #577080
       font-size: 14px
       font-weight: 700
+      &::before
+        content: ''
+        background: url('../img/bitcoin.png') no-repeat
+        height: 10px
+        width: 10px
+  .active
+    color: #fff
 
+.hidden
+  display: none !important
 
+.operation_table
+  display: flex
+  flex-direction: column
+  width: 100%
+  border-top: 1px solid #2f4758
 
+.operation_status
+  display: flex
+  flex-wrap: wrap
+
+  flex-basis: 100%
+  height: 60px
+  align-items: center
+  &_main
+
+  &_leftBlock
+    flex-basis: 40%
+    border: none
+  &_centralBlock
+    flex-basis: 40%
+    border: none
+
+  &_rightBlock
+    border: none
+    flex-basis: 20%
+  &_from
+    font-size: 12px
+    font-weight: 400
+    color: #fff
+    margin-bottom: 0
+  &_time
+    color: #577080
+    font-size: 12px
+    font-weight: 400
+  &_descr
+    height: 100px
+    border: none
+    &_info
+      align-self: center
+      margin-left: 54px
+      color: #577080
+      font-weight: 700
+      span
+        display: block
+        color: #fff
+
+.operation_status_img
+  width: 20px
+  height: 26px
+  margin: 0 20px
+
+.operation_status_exchange
+  display: flex
+  &__span
+    color: #577080
+    font-weight: 400
+    margin-right: 20px
+  &__p
+    color: #fff
+    margin-bottom: 0
+  &__p__span
+    color: #2daa47
+    font-weight: 700
+
+//exchange
+.exchange
+  max-width: 810px
+  margin: auto
+  margin-top: 180px
+
+.block_exchange
+  display: flex
+  margin-bottom: 50px
+  justify-content: space-between
+  &_sending
+    flex-direction: column
+    align-items: center
+    &_h1
+      color: #ffffff
+      font-family: "Proxima Nova"
+      font-size: 35px
+      font-weight: 300
+      margin-bottom: 21px
+    &_h2
+      color: #ffffff
+      font-size: 20px
+      font-weight: 400
+      margin-bottom: 49px
+    &_p
+      color: #fff
+      margin-bottom: 47px
+      font-size: 17px
+      font-weight: 400
+    &_a
+      text-transform: uppercase
+      color: #fff !important
+      font-size: 13px
+      font-weight: 700
+      border-radius: 3px
+      border: 1px solid #577080
+      padding: 16px 35px
+  &_bottom
+    justify-content: center
+  &_p
+    text-align: center
+    color: #577080
+    font-size: 14px
+    font-weight: 400
+  &_youAre
+    justify-content: center
+    padding-top: 23px
+  .form-control
+    background: transparent
+    border: none
+    padding: 0
+  &_central
+    img
+      width: 30px
+      height: 26px
+      margin: 20px 30px
+      align-self: flex-end
+  &_coin
+    flex-direction: column
+    width: 360px
+    &__left
+      text-align: right
+    &_p
+      font-size: 14px
+      font-weight: 400
+      color: #fff
+      margin-bottom: 0
+      &__bottom
+        font-weight: 700
+        color: #fff
+    &_h2
+      color: #2c9e47
+      font-family: "Proxima Nova"
+      font-size: 31px
+      font-weight: 300
+      margin-bottom: 0
+      &__right
+        color: #afc452
+
+  &_header
+    color: #fff
+    text-align: center
+    font-family: "Proxima Nova"
+    font-size: 25px
+    font-weight: 400
+    margin-bottom: 28px
+  &_button
+    background: transparent
+    display: flex
+    flex-direction: row
+    height: 67px
+    width: 360px
+    border-radius: 10px
+    border: 1px solid #3a5364
+    align-items: center
+    &__exchange
+      display: flex
+      justify-content: center
+      margin-bottom: 31px
+      color: #ffffff
+      font-family: "Proxima Nova"
+      font-size: 25px
+      font-weight: 400
+      width: 261px
+      height: 62px
+      border-radius: 5px
+      background-color: #ffffff
+      background-image: linear-gradient(-253deg, #00672b 0%, #afc452 98%, #afc452 100%)
+    p
+      color: #ffffff
+      font-size: 16px
+      font-weight: 700
+      margin-bottom: 0 !important
+      text-align: left
+
+    span
+      display: block
+      font-size: 13px
+      font-weight: 400
+      color: #577080
+    img
+      margin-left: 99px
+    &_img__coin
+      width: 41px
+      height: 44px
+      margin: 0 17px
+      margin-left: 17px !important
+  &_form
+    width: 360px
+    display: flex
+    flex-direction: column
+    border: 1px solid #3a5364
+    border-radius: 10px
+
+    .input-group-text
+      color: #577080
+      font-size: 16px
+      font-weight: 400
+      margin: 20px 30px
+      display: flex
+    &_input
+      background: transparent
+      height: 66px
+      width: 360px
+      input
+        text-indent: 30px
+        color: #2daa47
+      input[placeholder]
+        color: #2daa47
+        font-family: "Proxima Nova"
+        font-size: 25px
+        font-weight: 400
+      input::placeholder
+        color: #2daa47
+      &_top
+        border-bottom: 1px solid #3a5364
+        &__receive
+          input::placeholder
+            color: #afc452
+      &_bottom
+        input::placeholder
+          color: #fff
+    &_bottom
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+#span_progress
+  color: #2c9e47
+  font-family: "Proxima Nova"
+  font-weight: 400
+.c100 .bar
+  border-color: #2c9e47 !important
+.c100:after
+   background-color: #233644
+
+//modal
+.modal-content
+  background-color: #233644
+  .block_exchange_button img
+    margin-left: 160px
+
+.modal-header
+  flex-direction: column
+  border-bottom: none
+  &_button
+    color: #fff
+    background: #2c9e47
+    font-size: 16px
+    font-weight: 700
+    margin-top: 40px
+    margin-bottom: 54px
+    border-radius: 5px
+    text-transform: uppercase
+    padding: 21px 35px
+  p
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    margin-bottom: 25px
+
+.modal-title
+  color: #ffffff
+  font-family: "Proxima Nova"
+  font-size: 25px
+  font-weight: 400
+  margin-bottom: 30px
+
+.close
+  color: #fff
+  opacity: 1
+  align-self: flex-end
+  text-shadow: none
+  font-size: 28px
+  //display: flex
+  //align-items: flex-end
 
 @import "media.sass"
+@import "round.css"
