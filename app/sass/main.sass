@@ -720,6 +720,11 @@ img
 
   a
     color: #fff
+    &:hover
+      color: #2daa47      
+    &.active
+      color: #2daa47
+      
 
   ul
     display: flex
@@ -752,19 +757,32 @@ img
   padding-top: 30px
   padding-bottom: 33px
   text-align: center
+  &_buttons
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 32px
+    margin-bottom: 74px
   &_button
-    &_left
-      border-radius: 5px
-      background-color: #2daa47
-      padding: 24px
+    margin: 10px
+    color: #fff
+    border-radius: 5px
+    width: 160px
+    height: 55px
+    font-size: 16px
+    font-weight: 700
+    padding: 15px 0
+    & img
+      padding-left: 40px
+      margin-top: -7px
     &_right
-      border-radius: 5px
       background-color: #a4b45c
-      padding: 24px
-
+    &_left
+      background-color: #2daa47  
   &_img
-    width: 166px
+    width: 120px
     height: 203px
+    margin-bottom: 40px
   &_h1
     color: #ffffff
     font-size: 43px
@@ -775,7 +793,9 @@ img
   ul
     display: flex
     justify-content: space-around
-    width: 100%
+    max-width: 355px
+    margin: auto
+    
     li
       color: #577080
       font-size: 14px
@@ -1050,6 +1070,9 @@ img
     border-radius: 5px
     text-transform: uppercase
     padding: 21px 35px
+    &__send
+      margin-bottom: 20px
+
   p
     color: #ffffff
     font-size: 18px
@@ -1069,8 +1092,66 @@ img
   align-self: flex-end
   text-shadow: none
   font-size: 28px
-  //display: flex
-  //align-items: flex-end
+
+.modal_send_p
+  display: flex
+  font-size: 16px
+  font-weight: 400
+.modal_send_span
+  color: #ffffff
+  font-size: 16px
+  font-weight: 700  
+  line-height: 34px
+  margin: 25px
+    
+#send
+  .form-control
+    background: transparent
+    border: none
+    text-align: center
+    &:placeholder
+      font-size: 16px
+      font-weight: 400
+      color: #577080
+  .form-control_bottom::placeholder
+      color: #2daa47 
+      font-size: 23px
+      font-weight: 700
+  .input-group
+    border-radius: 10px
+    border: 1px solid #3a5364
+    text-align: center
+    padding: 15px
+    &_bottom
+      border: 2px solid #fff
+.input-group-prepend_img
+  margin-left: 7px
+  margin-right: 20px
+
+.modal_send_p__bottom
+  font-size: 16px  !important
+  margin-top: 20px !important
+  span
+    font-weight: 700
+  span:nth-child(2)
+    color: #2daa47
+.send_status_p
+  color: #577080 !important
+  font-size: 13px !important
+  font-weight: 400 !important
+  margin-bottom: 0 !important
+  span
+    color: #ffffff !important
+    font-weight: 700 !important
+    line-height: 18px !important
+  span:nth-child(2)
+    color: #2daa47 !important
+
+
+
+
+    
+
 
 @import "media.sass"
 @import "round.css"

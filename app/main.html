@@ -223,9 +223,9 @@
                             <img class="operations_img" src="img/Ethereum.png" alt="">
                             <h1 class="operations_h1">20.30006080 ETH</h1>
                             <h2 class="operations_h2">$38.030080</h2>
-                            <div class="operations_button">
-                                <a class="operations_button_left">SEND <img src="img/send.png" alt=""></a>
-                                <a class="operations_button_right">RECEIVE <img src="img/receive_w.png" alt=""></a>
+                            <div class="operations_buttons">
+                                <a class="operations_button operations_button_left" data-toggle="modal" data-target="#send">SEND <img src="img/send.png" alt=""></a>
+                                <a class="operations_button operations_button_right" data-toggle="modal" data-target="#receive">RECEIVE <img src="img/receive_w.png" alt=""></a>
                             </div>
                             <ul>
                                 <li class="active">ALL</li>
@@ -488,6 +488,44 @@
                         </div>
                     </div>
                     <button type="button" class="btn modal-header_button">Add New Coin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="send" tabindex="-1" role="dialog" aria-labelledby="send" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="modal-title" id="send">Send Ethereum, ETH</h2>
+                    <p class="modal_send_p">Send to</p>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <img src="img/qr_small.png" alt="">
+                        </div>
+                        <input type="text" class="form-control" placeholder="Ethereum Address" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                      <p class="modal_send_span">Amount</p>
+                      <div class="input-group input-group_bottom ">
+                        <div class="input-group-prepend">
+                          <img class="input-group-prepend_img" src="img/coins_small.png" alt="">
+                        </div>
+                        <input type="number" class="form-control form-control_bottom" placeholder="2.0060" aria-label="number" aria-describedby="basic-addon2">
+                        <div class="input-group-appepend">
+                            <span class="modal_send_span ">USD</span>
+                          </div>
+                        
+                      </div>
+                      <p class="modal_send_p__bottom">You are sending <span>6.30080 ETH —</span><span>$8.300030</span></p>
+                    <button type="button" class="btn modal-header_button modal-header_button__send">SEND ETH</button>
+                    <div class="send_status">
+<p class="send_status_p">Remaining Ethereum Balance:<span>8.03800 ETH — </span><span>$2.033080</span></p>
+<p class="send_status_p">Network Mining Fee: <span> 0.002302 ETH — </span><span>$0.000030</span></p>
+
+                    </div>
                 </div>
             </div>
         </div>
