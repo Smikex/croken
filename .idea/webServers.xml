@@ -2,10 +2,10 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="36075d54-78b3-4467-b2f5-699f9cffd0f2" name="croken" url="http://83.220.168.209">
+      <webServer id="36075d54-78b3-4467-b2f5-699f9cffd0f2" name="croken" url="http://croken.fserv1.pp.ua">
         <fileTransfer host="83.220.168.209" port="21" rootFolder="/public_html/croken_fserv1_pp_ua/">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
           </advancedOptions>
           <option name="port" value="21" />
         </fileTransfer>
