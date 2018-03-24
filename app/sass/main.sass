@@ -12,7 +12,7 @@ body
   color: #fff
   margin-bottom: 100px
 
-textarea, input
+textarea, input, select
   resize: none
   &:focus,
   &:active
@@ -29,7 +29,7 @@ a
   color: #fff
   cursor: pointer
 a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover
-  color: #fff  
+  color: #fff
 
 button
   cursor: pointer
@@ -727,10 +727,10 @@ img
   a
     color: #fff
     &:hover
-      color: #2daa47      
+      color: #2daa47
     &.active
       color: #2daa47
-      
+
 
   ul
     display: flex
@@ -784,7 +784,7 @@ img
     &_right
       background-color: #a4b45c
     &_left
-      background-color: #2daa47  
+      background-color: #2daa47
   &_img
     // width: 120px
     height: 203px
@@ -801,7 +801,7 @@ img
     justify-content: space-around
     max-width: 355px
     margin: auto
-    
+
     li
       color: #577080
       font-size: 14px
@@ -827,7 +827,7 @@ img
   display: flex
   flex-direction: column
   width: 100%
- 
+
 
 .operation_status
   border-top: 1px solid #2f4758
@@ -905,7 +905,7 @@ img
   border-radius: 10px
   border: 1px solid #3a5364
   align-items: center
-  &_option  
+  &_option
     background: url('../img/bitcoin_small.png')
 .block_exchange_dropdown
   .dropdown-menu
@@ -917,7 +917,7 @@ li.block_exchange_button
   p
     color: #577080
 .dropdown-item.active, .dropdown-item:active
-  background-color: transparent    
+  background-color: transparent
 .block_exchange
   display: flex
   margin-bottom: 50px
@@ -1078,6 +1078,7 @@ li.block_exchange_button
       display: flex
       flex-direction: column
       justify-content: center
+      margin: auto
 
 #span_progress
   color: #2c9e47
@@ -1139,10 +1140,10 @@ li.block_exchange_button
 .modal_send_span
   color: #ffffff
   font-size: 16px
-  font-weight: 700  
+  font-weight: 700
   line-height: 34px
   margin: 12px
-    
+
 #send
   .modal-header_button
     margin-top: 5px !important
@@ -1155,7 +1156,7 @@ li.block_exchange_button
       font-weight: 400
       color: #577080
   .form-control_bottom::placeholder
-      color: #2daa47 
+      color: #2daa47
       font-size: 23px
       font-weight: 700
   .input-group
@@ -1198,13 +1199,13 @@ li.block_exchange_button
     padding-left: 0
     padding-right: 0
   .close
-    margin-right: 15px  
+    margin-right: 15px
 
 .modal-header_top_img
   margin-top: -40px
 
 p.modal_receive_p
-  margin-top: 34px  
+  margin-top: 34px
   font-size: 14px
   margin-bottom: 8px
   &__cod
@@ -1228,7 +1229,7 @@ p.modal_receive_p
     justify-content: center
   &_a
     padding-right: 15px
-    margin-top: -4px  
+    margin-top: -4px
   &_p
     padding: 0 15px
     font-size: 12px !important
@@ -1254,7 +1255,7 @@ p.modal_receive_p
       border-top: 1px solid #3a5364
       display: flex
       justify-content: space-between
-    
+
   // select
 
 .select2-container--default .select2-selection--single
@@ -1267,14 +1268,41 @@ p.modal_receive_p
   color: #ffffff
   font-size: 16px
   font-weight: 700
-  padding-top: 7px
+  margin-left: 15px
   text-transform: uppercase
 .select2-container--default .select2-results>.select2-results__options
   background: transparent
   color: #577080
 .select2-container--default .select2-selection--single .select2-selection__arrow
   top: 20px
-  right: 10px  
-
+  right: 10px
+.span_available
+  padding-left: 40px
+  display: block
+  color: #577080
+  font-size: 14px
+.span_available_selected
+    color: #577080
+    display: block
+    font-size: 13px
+    font-weight: 400
+    margin-left: 50px
+    margin-top: -20px
+    text-transform: initial
+.select_ico
+  height: 20px
+  width: 20px
+  margin-right: 15px
+.selected_ico
+  width: 41px
+  height: 44px
+  margin-top: 10px
+  margin-right: 5px
+.select_span
+  font-size: 16px
+  display: block
+.selected_span
+  font-size: 16px
+  display: block
 @import "media.sass"
 @import "round.css"
