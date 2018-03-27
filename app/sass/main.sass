@@ -11,7 +11,8 @@ body
   font-size: 14px
   color: #fff
   margin-bottom: 100px
-
+textarea
+ overflow: hidden  
 textarea, input, select, span, div
   resize: none
   &:focus,
@@ -41,10 +42,62 @@ a:focus, a:hover, button:hover, button:focus
   outline: none
 
 header
-  padding-top: 28px
   a
     display: flex
     justify-content: center
+    padding-top: 28px
+.main_header
+  height: 60px
+  display: flex
+  justify-content: space-between
+  &_logo
+    display: flex
+    align-items: center
+    flex-basis: 50%
+    padding: 0 15px
+.mobile_nav
+  background-color: #162a38
+  border-left: 1px solid #233644
+  &_active
+    background-color: #0f212d
+  &_collapse
+    position: absolute
+    top: 60px
+    right: 0
+    background-color: #0f212d
+  &_main_menu
+    width: 255px  
+  .navbar
+    padding: 10px
+    a
+      padding: 15px 0
+    span
+      display: flex
+      font-size: 17px
+      color: #fff
+      &:hover
+        color: #2daa47
+      i
+        display: flex
+        padding-left: 40px
+        padding-right: 20px
+        font-size: 30px
+    ul
+      padding-top: 14px    
+    li:nth-child(2)
+      i
+        padding-right: 13px
+    li:nth-child(3)
+      i
+        padding-right: 17px
+
+.custom-toggler.navbar-toggler 
+  border: none
+
+.custom-toggler .navbar-toggler-icon
+  background-image: url("../img/toggler.png")        
+.navbar-toggler-icon.navbar-toggler-icon_custom
+  background-image: url("../img/x.png")
 
 .incorect_email
   background-color: #27242e
@@ -62,7 +115,7 @@ header
 .log_in, .forgot_password, .sign_up_account
   margin: auto
   padding-top: 18vh
-  max-width: 318px
+  max-width: 312px
   display: flex
   flex-direction: column
   justify-content: center
@@ -83,7 +136,7 @@ header
       color: #577080
       padding: 16px
     button
-      margin-top: 16px
+      margin-top: 32px
       padding: 14px
       background: #0d8b41
       font-family: Proxima Nova
@@ -104,6 +157,7 @@ header
     color: #577080
 
 .forgot_password
+  max-width: 344px
   .cancel
     border: none
     color: #0d8b41
@@ -111,8 +165,13 @@ header
     outline: transparent
     box-shadow: none
   form
+    padding-top: 23px
     button
-      padding: 14px 106px
+      margin-top: 24px
+      padding: 14px
+      width: 100%
+  p
+    padding-top: 14px    
 
 .login_confirm
   padding-top: 22vh
@@ -219,7 +278,6 @@ header
 .lines
   display: flex
   justify-content: center
-  padding: 19px 0
   padding-bottom: 10px
 
 .line
@@ -636,10 +694,10 @@ img
   margin-top: 5vh
 
 .user_menu
-  margin-top: 20px
-  position: absolute
-  right: 20px
   display: flex
+  align-items: center
+  .dropdown
+    padding: 0 15px
   .dropdown.show
 
     .btn_wallet
@@ -679,8 +737,6 @@ img
 
 .user
   display: flex
-  margin-right: 30px
-  margin-left: 20px
   padding: 3px
   p
     margin-bottom: 0
@@ -1358,7 +1414,7 @@ p.modal_receive_p
   display: block
   color: red
   text-align: center  
-  padding-bottom: 20px
+  padding: 10px
   font-size: 13px
   font-weight: 400
 #pass_incorect
@@ -1366,9 +1422,12 @@ p.modal_receive_p
 #pass_diff
   display: block
   text-align: center  
-  padding-top: 20px
+  padding: 10px
   font-size: 13px
   font-weight: 400
+#sign_form
+  .form-group
+    margin-bottom: 0  
 
 @import "media.sass"
 @import "round.css"

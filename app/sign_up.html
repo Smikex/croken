@@ -16,7 +16,7 @@
     <a href="index.html"><img src="img/Logo.png" alt=""></a>
 </header>
 
-<div class="container sign_up">
+<div class="container sign_up sign_up__first">
     <ul id="myTab">
         <li class="active">
             <img src="img/1.svg" alt=""><p>Sign Up for a Croken Account</p>
@@ -33,7 +33,7 @@
 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
     <div class="sign_up_account">
     <h1>Sign Up for a Croken Account</h1>
-      <form id="sign_form" method="post" action="#" onsubmit="return checkPassword(this);">
+      <form id="sign_form" method="get" action="sign_up_auth.html" onsubmit="return checkPassword(this);">
         <div class="form-group">
           <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
         </div>
