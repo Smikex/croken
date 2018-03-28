@@ -57,10 +57,11 @@ header
     padding: 0 15px
 .mobile_nav
   background-color: #162a38
-  border-left: 1px solid #233644
+  border-left: 1px solid #304757
   &_active
     background-color: #0f212d
   &_collapse
+    z-index: 2
     position: absolute
     top: 60px
     right: 0
@@ -650,7 +651,11 @@ img
     color: #657b8a
 
 .diagram_wrap
-
+  &_header
+    font-size: 35px
+    font-weight: 300
+    margin: 0 auto
+    padding: 24px 0 54px 0 
 .coin_color_line
   margin: auto
   width: 42px
@@ -743,6 +748,15 @@ img
     color: #fff
   a
     margin-left: 10px
+.li_user_sm
+  background-color: #0a1822
+.user_sm
+  display: none
+  align-items: center
+  justify-content: space-around
+  p
+    margin-bottom: 0    
+  
 .wallets_coins_main
   display: block
 .wallet-item
@@ -784,6 +798,12 @@ img
   padding-top: 53px
   height: 100vh
   border-right: 1px solid #2f4758
+  &_header
+    h1
+      font-size: 16px
+      font-weight: bold
+      text-align: center
+      color: #fff
   &_wrap
     display: flex
 
@@ -985,6 +1005,12 @@ li.block_exchange_button
   display: flex
   margin-bottom: 50px
   justify-content: space-between
+  &_form
+    margin-top: 70px !important
+  &_bigheader
+    display: block
+    text-align: center
+    color: #fff
   &_sending
     flex-direction: column
     align-items: center
@@ -1031,7 +1057,9 @@ li.block_exchange_button
       width: 30px
       height: 26px
       margin: 20px 30px
-      align-self: flex-end
+      margin-top: 75px
+    &_img_second
+      margin-top: 25px !important  
   &_coin
     flex-direction: column
     width: 360px
@@ -1155,6 +1183,14 @@ li.block_exchange_button
   border-color: #2c9e47 !important
 
 //modal
+.modal_addNewCoin
+  transform: translate(0%, 45%) !important
+.modal_sendCoin
+  transform: translate(-16%, 25%) !important
+.modal_receiceCoin  
+  transform: translate(0%, 15%) !important
+
+
 .modal-content
   background-color: #233644
   .block_exchange_button img
@@ -1392,8 +1428,9 @@ p.modal_receive_p
     width: 16px
     height: 16px
     padding-left: 20px
-.select2
-  width: 85% !important
+.wrap_select_coin    
+  .select2
+    width: 85% !important
 .select2-results
   background: #3a5364
 .select2-results__option--highlighted[aria-selected]
@@ -1406,6 +1443,25 @@ p.modal_receive_p
   border: solid 2px #3a5364
 .select2-selection.select2-selection--single
   border: solid 2px #3a5364 
+
+
+//  select coin
+
+.wrap_select_coin
+  flex-basis: 60%
+  padding: 16px
+  .select2-selection.select2-selection--single
+    border: none
+    height: auto
+  .select2-container--default .select2-selection--single .select2-selection__rendered
+    font-weight: 300
+  .select2-container--default .select2-selection--single .select2-selection__arrow
+    top: 0  
+      
+
+
+
+
 
 .form_error
   background: red

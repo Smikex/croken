@@ -103,54 +103,60 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse mobile_nav_collapse" id="navbarNav">
-            <nav class="main-menu mobile_nav_main_menu">
-                <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                  <li>
-                    <a class="nav-link " id="v-pills-Portfolio-tab" data-toggle="pill" href="#v-pills-Portfolio" role="tab" aria-controls="v-pills-Portfolio"
-                      aria-selected="true">
-                      <span>
-                        <i class="icon-1"></i>Portfolio</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="nav-link" id="v-pills-Wallet-tab" data-toggle="pill" href="#v-pills-Wallet" role="tab" aria-controls="v-pills-Wallet"
-                      aria-selected="false">
-                      <span>
-                        <i class="icon-2"></i>Wallet</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="nav-link" id="v-pills-Exchange-tab" data-toggle="pill" href="#v-pills-Exchange" role="tab" aria-controls="v-pills-Exchange"
-                      aria-selected="false">
-                      <span>
-                        <i class="icon-3"></i>Exchange</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="nav-link" id="v-pills-Backup-tab" data-toggle="pill" href="#v-pills-Backup" role="tab" aria-controls="v-pills-Backup"
-                      aria-selected="false">
-                      <span>
-                        <i class="icon-4"></i>Backup</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="nav-link" id="v-pills-Settings-tab" data-toggle="pill" href="#v-pills-Settings" role="tab" aria-controls="v-pills-Settings"
-                      aria-selected="false">
-                      <span>
-                        <i class="icon-5"></i>Settings</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="nav-link" id="v-pills-Help-tab" data-toggle="pill" href="#v-pills-Help" role="tab" aria-controls="v-pills-Help"
-                      aria-selected="false">
-                      <span>
-                        <i class="icon-6"></i>Help</span>
-                    </a>
-                  </li>
-      
-      
-                </ul>
-              </nav>
+          <nav class="main-menu mobile_nav_main_menu">
+            <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <li>
+                <a class="nav-link " id="v-pills-Portfolio-tab" data-toggle="pill" href="#v-pills-Portfolio" role="tab" aria-controls="v-pills-Portfolio"
+                  aria-selected="true">
+                  <span>
+                    <i class="icon-1"></i>Portfolio</span>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" id="v-pills-Wallet-tab" data-toggle="pill" href="#v-pills-Wallet" role="tab" aria-controls="v-pills-Wallet"
+                  aria-selected="false">
+                  <span>
+                    <i class="icon-2"></i>Wallet</span>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" id="v-pills-Exchange-tab" data-toggle="pill" href="#v-pills-Exchange" role="tab" aria-controls="v-pills-Exchange"
+                  aria-selected="false">
+                  <span>
+                    <i class="icon-3"></i>Exchange</span>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" id="v-pills-Backup-tab" data-toggle="pill" href="#v-pills-Backup" role="tab" aria-controls="v-pills-Backup"
+                  aria-selected="false">
+                  <span>
+                    <i class="icon-4"></i>Backup</span>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" id="v-pills-Settings-tab" data-toggle="pill" href="#v-pills-Settings" role="tab" aria-controls="v-pills-Settings"
+                  aria-selected="false">
+                  <span>
+                    <i class="icon-5"></i>Settings</span>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" id="v-pills-Help-tab" data-toggle="pill" href="#v-pills-Help" role="tab" aria-controls="v-pills-Help"
+                  aria-selected="false">
+                  <span>
+                    <i class="icon-6"></i>Help</span>
+                </a>
+              </li>
+              <li class="li_user_sm">
+                <div class="user_sm">
+                  <p>Richard Nixon</p>
+                  <a href="index.html">
+                    <img src="img/exit.png" alt="">
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
         </div>
       </nav>
     </div>
@@ -245,7 +251,9 @@
         </div>
         <div class="container tab-pane fade" id="v-pills-Portfolio" role="tabpanel" aria-labelledby="v-pills-Portfolio-tab">
           <div class="row coins_wrap">
+            <h1 class="diagram_wrap_header">Portfolio</h1>
             <div class="col-lg-12 col-xl-7  diagram_wrap">
+
               <div id="diagram"></div>
               <div class="circle_diagram">
                 <p>Total Value</p>
@@ -335,7 +343,11 @@
         <div class="tab-pane fade" id="v-pills-Wallet" role="tabpanel" aria-labelledby="v-pills-Wallet-tab">
           <div class="wallet_coins_wrap">
             <div class="wallet_coins">
-              <ul class="nav" id="pills-tab" role="tablist">
+              <div class="wallet_coins_header">
+                <h1>WALLET</h1>
+              </div>
+
+               <ul class="nav nav_select_coin" id="pills-tab" role="tablist">
                 <li>
                   <a class="active" id="pills-Bitcoin-tab" data-toggle="pill" href="#pills-Bitcoin" role="tab" aria-controls="pills-Bitcoin"
                     aria-selected="false">Bitcoin</a>
@@ -353,7 +365,22 @@
                 <li> Verge</li>
                 <li> Iconomi</li>
                 <li> VeChain</li>
-              </ul>
+              </ul> 
+
+              <div class="wrap_select_coin">
+                <select class="select_coin" class="nav" id="pills-tab" role="tablist">
+                  <option> Bitcoin</option>
+                  <option> Ethereum</option>
+                  <option> Bitcoin_Cash</option>
+                  <option> Ripple</option>
+                  <option> Binance</option>
+                  <option> Namecoin</option>
+                  <option> Verge</option>
+                  <option> Iconomi</option>
+                  <option> VeChain</option>
+                </select>
+              </div>
+
               <div class="add_new">
                 <button data-toggle="modal" data-target="#addNew">
                   <img src="img/plus.png" alt=""> Add New</button>
@@ -388,9 +415,13 @@
                       <div class="operation_table">
                         <div class="operation_status  operation_status_main" data-status="received">
                           <div class="operation_status operation_status_leftBlock">
+                            <div class="operation_status_wrap_img">
                             <img class="operation_status_img" src="img/received.png" alt="">
-                            <div class="operation_status_exchange">
+                          </div>
+                            <div class="operation_status_exchange operation_status_exchange_left ">
                               <span class="operation_status_exchange__span">Received</span>
+                            </div>
+                              <div class="operation_status_exchange">  
                               <p class="operation_status_exchange__p"> 0.30080 ETH —
                                 <span class="operation_status_exchange__p__span">
                                   $8.30600</span>
@@ -419,16 +450,20 @@
                         </div>
 
                         <div class="operation_status operation_status_main" data-status="received">
-                          <div class="operation_status operation_status_leftBlock">
-                            <img class="operation_status_img" src="img/received.png" alt="">
-                            <div class="operation_status_exchange">
-                              <span class="operation_status_exchange__span">Received</span>
-                              <p class="operation_status_exchange__p"> 0.30080 ETH —
-                                <span class="operation_status_exchange__p__span">
-                                  $8.30600</span>
-                              </p>
-                            </div>
-                          </div>
+                            <div class="operation_status operation_status_leftBlock">
+                                <div class="operation_status_wrap_img">
+                                <img class="operation_status_img" src="img/received.png" alt="">
+                              </div>
+                                <div class="operation_status_exchange operation_status_exchange_left ">
+                                  <span class="operation_status_exchange__span">Received</span>
+                                </div>
+                                  <div class="operation_status_exchange">  
+                                  <p class="operation_status_exchange__p"> 0.30080 ETH —
+                                    <span class="operation_status_exchange__p__span">
+                                      $8.30600</span>
+                                  </p>
+                                </div>
+                              </div>
                           <div class="operation_status operation_status_centralBlock">
                             <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
                             </p>
@@ -480,16 +515,20 @@
                     <div class="wallets_coins_content">
                       <div class="operation_table">
                         <div class="operation_status  operation_status_main" data-status="received">
-                          <div class="operation_status operation_status_leftBlock">
-                            <img class="operation_status_img" src="img/received.png" alt="">
-                            <div class="operation_status_exchange">
-                              <span class="operation_status_exchange__span">Received</span>
-                              <p class="operation_status_exchange__p"> 0.30080 ETH —
-                                <span class="operation_status_exchange__p__span">
-                                  $8.30600</span>
-                              </p>
-                            </div>
-                          </div>
+                            <div class="operation_status operation_status_leftBlock">
+                                <div class="operation_status_wrap_img">
+                                <img class="operation_status_img" src="img/received.png" alt="">
+                              </div>
+                                <div class="operation_status_exchange operation_status_exchange_left ">
+                                  <span class="operation_status_exchange__span">Received</span>
+                                </div>
+                                  <div class="operation_status_exchange">  
+                                  <p class="operation_status_exchange__p"> 0.30080 ETH —
+                                    <span class="operation_status_exchange__p__span">
+                                      $8.30600</span>
+                                  </p>
+                                </div>
+                              </div>
                           <div class="operation_status operation_status_centralBlock">
                             <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
                             </p>
@@ -512,16 +551,21 @@
                         </div>
 
                         <div class="operation_status operation_status_main" data-status="exchanged">
-                          <div class="operation_status operation_status_leftBlock">
-                            <img class="operation_status_img" src="img/exchanged.png" alt="">
-                            <div class="operation_status_exchange">
-                              <span class="operation_status_exchange__span">Exchanged</span>
-                              <p class="operation_status_exchange__p"> 0.30080 ETH —
-                                <span class="operation_status_exchange__p__span">
-                                  $8.30600</span>
-                              </p>
-                            </div>
-                          </div>
+
+                            <div class="operation_status operation_status_leftBlock">
+                                <div class="operation_status_wrap_img">
+                                <img class="operation_status_img" src="img/exchanged.png" alt="">
+                              </div>
+                                <div class="operation_status_exchange operation_status_exchange_left ">
+                                  <span class="operation_status_exchange__span">Exchanged</span>
+                                </div>
+                                  <div class="operation_status_exchange">  
+                                  <p class="operation_status_exchange__p"> 0.30080 ETH —
+                                    <span class="operation_status_exchange__p__span">
+                                      $8.30600</span>
+                                  </p>
+                                </div>
+                              </div>
                           <div class="operation_status operation_status_centralBlock">
                             <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
                             </p>
@@ -556,7 +600,9 @@
         </div>
         <div class="tab-pane fade" id="v-pills-Exchange" role="tabpanel" aria-labelledby="v-pills-Exchange-tab">
           <div class="exchange  exchange_top">
+              <h1 class="block_exchange_bigheader">Exchange</h1>
             <div class="block_exchange">
+
               <div class="block_exchange block_exchange_coin">
                 <h1 class="block_exchange_header">Exchange</h1>
 
@@ -564,6 +610,24 @@
                   <select class="blockExchange_select select_exchange">
                   </select>
                 </form>
+
+                <form class="" action="">
+                    <div class="block_exchange_form">
+    
+                      <div class="input-group block_exchange_form_input block_exchange_form_input_top">
+                        <input type="number" class="form-control" placeholder="0.2003" aria-describedby="basic-addon1">
+                        <div class="input-group-apppend">
+                          <span class="input-group-text" id="basic-addon1">BTC</span>
+                        </div>
+                      </div>
+                      <div class="input-group block_exchange_form_input block_exchange_form_input_bottom">
+                        <input type="number" class="form-control" placeholder="200.38" aria-label="number" aria-describedby="basic-addon1" disabled>
+                        <div class="input-group-apppend">
+                          <span class="input-group-text" id="basic-addon1">USD</span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
               </div>
               <div class="block_exchange block_exchange_central">
                 <img src="img/exchange.png" alt="">
@@ -574,52 +638,26 @@
                   <select class="blockExchange_select select_receive">
                   </select>
                 </form>
-
+                <form class="" action="">
+                    <div class="block_exchange_form">
+    
+                      <div class="input-group block_exchange_form_input block_exchange_form_input_top block_exchange_form_input_top__receive">
+                        <input type="number" class="form-control " placeholder="0.2003" aria-describedby="basic-addon1">
+                        <div class="input-group-apppend">
+                          <span class="input-group-text" id="basic-addon1">BTC</span>
+                        </div>
+                      </div>
+                      <div class="input-group block_exchange_form_input block_exchange_form_input_bottom">
+                        <input type="number" class="form-control" placeholder="200.32" aria-label="number" aria-describedby="basic-addon1" disabled>
+                        <div class="input-group-apppend">
+                          <span class="input-group-text" id="basic-addon1">USD</span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
 
               </div>
             </div>
-
-            <div class="block_exchange">
-
-              <form class="" action="">
-                <div class="block_exchange_form">
-
-                  <div class="input-group block_exchange_form_input block_exchange_form_input_top">
-                    <input type="number" class="form-control" placeholder="0.2003" aria-describedby="basic-addon1">
-                    <div class="input-group-apppend">
-                      <span class="input-group-text" id="basic-addon1">BTC</span>
-                    </div>
-                  </div>
-                  <div class="input-group block_exchange_form_input block_exchange_form_input_bottom">
-                    <input type="number" class="form-control" placeholder="200.38" aria-label="number" aria-describedby="basic-addon1" disabled>
-                    <div class="input-group-apppend">
-                      <span class="input-group-text" id="basic-addon1">USD</span>
-                    </div>
-                  </div>
-                </div>
-              </form>
-
-              <form class="" action="">
-                <div class="block_exchange_form">
-
-                  <div class="input-group block_exchange_form_input block_exchange_form_input_top block_exchange_form_input_top__receive">
-                    <input type="number" class="form-control " placeholder="0.2003" aria-describedby="basic-addon1">
-                    <div class="input-group-apppend">
-                      <span class="input-group-text" id="basic-addon1">BTC</span>
-                    </div>
-                  </div>
-                  <div class="input-group block_exchange_form_input block_exchange_form_input_bottom">
-                    <input type="number" class="form-control" placeholder="200.32" aria-label="number" aria-describedby="basic-addon1" disabled>
-                    <div class="input-group-apppend">
-                      <span class="input-group-text" id="basic-addon1">USD</span>
-                    </div>
-                  </div>
-                </div>
-              </form>
-
-            </div>
-
-
             <div class="block_exchange block_exchange_youAre">
               <div class="block_exchange_coin block_exchange_coin__left">
                 <p class="block_exchange_coin_p">You Are Exchanging</p>
@@ -628,7 +666,7 @@
 
               </div>
               <div class="block_exchange_central">
-                <img src="img/exchange.png" alt="">
+                <img class="block_exchange_central_img_second" src="img/exchange.png" alt="">
               </div>
               <div class="block_exchange_coin">
                 <p class="block_exchange_coin_p">You Will Receive</p>
@@ -665,7 +703,7 @@
                   <p class="block_exchange_coin_p block_exchange_coin_p__bottom">$2000.38</p>
                 </div>
                 <div class="block_exchange_central">
-                  <img src="img/exchange.png" alt="">
+                  <img  src="img/exchange.png" alt="">
                 </div>
                 <div class="block_exchange_coin">
                   <p class="block_exchange_coin_p">You Will Receive</p>
@@ -695,7 +733,7 @@
 
     <!--modal-->
     <div class="modal fade" id="addNew" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal_addNewCoin" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -723,7 +761,7 @@
     </div>
 
     <div class="modal fade" id="send" tabindex="-1" role="dialog" aria-labelledby="send" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal_sendCoin" role="document">
         <div class="modal-content modal_send">
           <div class="modal-header">
             <img class="modal-header_top_img" src="img/eth_ico.png" alt="">
@@ -764,7 +802,7 @@
     <!-- modal recieve -->
 
     <div class="modal fade" id="receive" tabindex="-1" role="dialog" aria-labelledby="receive" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal_receiceCoin" role="document">
         <div class="modal-content">
           <div class="modal-header modal_receive">
             <img class="modal-header_top_img" src="img/eth_ico.png" alt="">
@@ -834,6 +872,11 @@
   <script>
     // script select
 
+
+
+
+
+    ////
     var data_from = [{
         id: 0,
         text: 'Main ETH',
@@ -879,6 +922,9 @@
     });
 
 
+
+    ////
+
     var data = [{
         id: 0,
         text: 'Bitcoin',
@@ -914,7 +960,7 @@
     $(".select_receive").select2({
       data: data,
       templateResult: formatState,
-      templateSelection: formatSelect
+      templateSelection: formatSelect,
     })
 
     function formatState(state) {
@@ -973,11 +1019,17 @@
       return $state;
     }
 
+    //////
 
-$('.mobile_nav').click(function() {
-  $(this).toggleClass("mobile_nav_active");
-  $(this).find('.navbar-toggler-icon').toggleClass('navbar-toggler-icon_custom');
-});
+    $(".select_coin").select2({
+      // data: data,
+
+    });
+
+    $('.mobile_nav').click(function () {
+      $(this).toggleClass("mobile_nav_active");
+      $(this).find('.navbar-toggler-icon').toggleClass('navbar-toggler-icon_custom');
+    });
   </script>
 
 

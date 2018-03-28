@@ -5,8 +5,14 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width : 769px)
-  .main_header
+  .diagram_wrap_header, .wallet_coins_header, .wrap_select_coin, .main_header_logo, .mobile_nav, .block_exchange_bigheader
     display: none
+  .main_header
+    height: 0px
+  .user_menu
+    position: absolute
+    top: 15px
+    right: 30px  
   .sign_up
     li
       max-width: 30%
@@ -18,66 +24,78 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width : 1200px)
   /**/
+@media (max-width : 1279.98px)
+  .wallet_coins ul
+    width: 175px   
 // Large devices (desktops, less than 1200px)
 @media (max-width : 1199.98px)
-  /**/
+  .block_exchange_form
+    width: 80%
+    margin: 0 auto
+    &_input
+      width: 100%
+  .coin
+    flex: 0 0 24%
+  .operation_status
+    min-height: 0
+    &_main
+      padding: 20px 0  
+  .operation_status_leftBlock
+    order: -1
+    flex-basis: 80%
+  .operation_status_centralBlock
+    flex-basis: 100%
+  .operation_status_rightBlock
+    flex-basis: 20%
+    order: -1    
+  .operation_status_from
+    margin-left: 60px    
 
 // Medium devices (tablets, less than 992px)
 @media (max-width : 991.98px)
   /**/  
 @media (max-width : 768px)
+  .exchange
+    margin-top: 30px
+  .block_exchange_coin
+    width: 85%
+  .block_exchange
+    form
+      display: flex
+      justify-content: center
+    .select2
+      width: 80% !important
+  .mobile_nav
+    .nav-link
+      border-radius: 0
+  .wallet_coins_wrap
+    flex-direction: column
+  .wallet_coins_header
+    flex-basis: 20%
+  .wallet_coins
+    padding-top: 0
+    height: 60px
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    border-bottom: 1px solid #304757
+    .add_new
+      position: relative
+      bottom: inherit
+      padding: 0 5px
+  .wrap_select_coin    
+    border-left: 1px solid #304757
+    border-right: 1px solid #304757
   .sidebar
     display: none
   .login_confirm
     max-width: 520px
-  #diagram
-    //margin-top: -10vh
-    //margin-bottom: -28vh
-  .circle_diagram
-    position: relative
-    top: auto
-    left: auto
-    transform: none
-    width: auto
-    height: auto
-    box-shadow: none
-    background: none
-    border: none
-    p
-      padding-top: 0
-  .coins_wrap
     margin-top: -100px
   .view-section
     width: 100%
-    // height: 100vh
-
-  // .sidebar
-  //   width: 100px
-  //   .copyright
-  //     padding-left: 16px
-  //     p:nth-child(2)
-  //       padding-right: 25px
-  //   .nav-link.active
-  //     color: transparent
-  //   .logo
-  //     width: 85px
-  //   .main-menu
-  //     a
-
-  //       padding: 15px
-  //       padding-left: 27px
-  //       color: transparent
-  //       i
-  //         color: #fff
-  .diagram_wrap
-    //display: none
-  //.circle_diagram
-  //  display: none
-  .user_menu
-
   .coin
     margin-bottom: 25px
-    flex: 0 0 45%
+    flex: 0 0 24%
   #v-pills-home
     img
       margin-top: 3vh
@@ -89,8 +107,14 @@
       padding: 15px
     button
       margin-top: 25px
+  #pills-tab
+    display: none
+
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width : 575.98px)
+  .wrap_select_coin
+    flex-basis: 50%
   .sign_up
     ul
       flex-direction: column
@@ -98,22 +122,32 @@
       padding-bottom: 5px
       li
         margin: 10px
-
-  #diagram
-    margin-top: -45px
-    margin-bottom: -100px
+  .user
+    display: none
+  .user_sm
+    display: flex    
+  .btn_wallet
+    border: none
+  .user_menu
+    border-left: 1px solid #304757        
 
   .sign_up_autentificator.login_confirm
     padding: 0 15px
+  .circle_diagram
+    box-shadow: 0px 0px 0px 20px rgba(0, 0, 0, 0.18)  
+    width: 200px
+    height: 200px
+    p
+      padding-top: 30px
+      // font-size: 14px
+    h1
+      font-size: 32px    
 @media (max-width : 395.98px)
   .sign_up_confirmation_email_button
     width: 100% !important
     max-width: 100% !important
   header
     padding-top: 0
-  #diagram
-    margin-top: -75px
-    margin-bottom: -195px
   .log_in, .forgot_password, .sign_up_account, .login_confirm, .sign_up
     padding-top: 4vh
     max-width: 290px 
@@ -164,7 +198,79 @@
         li:nth-child(1), li:nth-child(2)
           flex-basis: 20%
           p
-            display: none                            
-   
+            display: none
+  .circle_diagram
+    box-shadow: 0px 0px 0px 20px rgba(0, 0, 0, 0.18)  
+    width: 150px
+    height: 150px
+    p
+      padding-top: 0
+      font-size: 14px
+    h1  
+      font-size: 32px
+  .diagram_wrap
+    margin-top: -80px
+  .diagram_wrap_header
+    padding-top: 0
+    padding-bottom: 0
+  .coins
+    margin-top: -140px  
+  .coin
+    margin-bottom: 25px
+    flex: 0 0 33%
+  .wrap_select_coin
+    border: 1px solid #304757  
+    border-right: none
+    border-left: none
+    display: flex
+    flex-basis: 100%
+
+                                                   
+  .wallet_coins
+    border-bottom: none
+    height: 200px
+    &_header
+      flex-basis: 100%
+      h1
+        font-size: 35px
+        font-weight: 300
+        padding-top: 42px
+        padding-bottom: 30px
+    .add_new
+      display: none   
+  .wrap_select_coin
+    .select2-container--default .select2-selection--single .select2-selection__rendered
+      font-weight: bold
+      font-size: 14px
+  .operations_buttons
+    padding: 10px
+  .operations_button
+    margin: 10px 5px   
+  .operation_status_img
+    width: 9px
+    height: 12px
+    margin: 0 3px
+  .operation_status_main
+    padding: 20px 10px  
+  .operation_status_rightBlock
+    order: 0
+  .operation_status_exchange
+    order: 1
+  .operation_status_exchange__span
+    margin-right: 0    
+  .operation_status_exchange_left
+    order: 0
+  .operation_status_wrap_img
+    order: 1
+  .operation_status_from
+    margin-left: 0
+  .operation_status_rightBlock
+    flex-basis: 50%
+  .operation_status_descr_info
+    margin-left: 0
+  .exchange
+    margin-top: 0  
+  .block_exchange
+    flex-direction: column          
 
     
