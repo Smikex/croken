@@ -92,10 +92,8 @@
           <img src="img/exit.png" alt="">
         </a>
       </div>
-
-
     </div>
-
+<!-- mobile nav -->
     <div class="mobile_nav">
       <nav class="navbar">
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -106,7 +104,7 @@
           <nav class="main-menu mobile_nav_main_menu">
             <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <li>
-                <a class="nav-link " id="v-pills-Portfolio-tab" data-toggle="pill" href="#v-pills-Portfolio" role="tab" aria-controls="v-pills-Portfolio"
+                <a class="nav-link " id="v-pills-Portfolio-tab" data-toggle="pill" data-toggle="collapse" href="#v-pills-Portfolio" role="tab" aria-controls="v-pills-Portfolio"
                   aria-selected="true">
                   <span>
                     <i class="icon-1"></i>Portfolio</span>
@@ -242,7 +240,7 @@
 
       <div class="tab-content" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-          <img src="img/crok_back.png" alt="">
+          <img class="mainLogo" src="img/crok_back.png" alt="">
           <h1>Welcome to Croken!</h1>
           <p>Get started by sending assets to your wallet or
             <button>restore from backup</button>
@@ -668,7 +666,7 @@
               <div class="block_exchange_central">
                 <img class="block_exchange_central_img_second" src="img/exchange.png" alt="">
               </div>
-              <div class="block_exchange_coin">
+              <div class="block_exchange_coin  block_exchange_coin__right">
                 <p class="block_exchange_coin_p">You Will Receive</p>
                 <h2 class="block_exchange_coin_h2 block_exchange_coin_h2__right">23.28002 ETH</h2>
                 <p class="block_exchange_coin_p block_exchange_coin_p__bottom">$2000.32</p>
@@ -871,12 +869,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
   <script>
     // script select
-
-
-
-
-
-    ////
     var data_from = [{
         id: 0,
         text: 'Main ETH',
@@ -1020,19 +1012,29 @@
     }
 
     //////
-
     $(".select_coin").select2({
+      DropdownCssClass: "test",
       // data: data,
-
     });
 
-    $('.mobile_nav').click(function () {
-      $(this).toggleClass("mobile_nav_active");
-      $(this).find('.navbar-toggler-icon').toggleClass('navbar-toggler-icon_custom');
-    });
+jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $('.navbar-collapse.mobile_nav_collapse.collapse.show, .navbar-toggler');
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.removeClass('show');
+      $('.navbar-toggler.custom-toggler').attr('aria-expanded' , 'false');
+		}
+	});
+});
+
+$( document ).ready(function() {
+    $('.mainLogo').animate({
+    opacity: 0.25,
+  }, 5000, function() {
+  });
+});
   </script>
-
-
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

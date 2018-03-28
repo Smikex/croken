@@ -29,11 +29,20 @@
     width: 175px   
 // Large devices (desktops, less than 1200px)
 @media (max-width : 1199.98px)
-  .block_exchange_form
-    width: 80%
-    margin: 0 auto
-    &_input
-      width: 100%
+  .block_exchange
+    &_coin
+      form
+        width: 80%
+        margin: 0 auto
+      .select2
+        width: 80% !important
+        margin: 0 auto
+    
+    &_form
+      width: 80%
+      margin: 0 auto
+      &_input
+        width: 100%
   .coin
     flex: 0 0 24%
   .operation_status
@@ -55,6 +64,8 @@
 @media (max-width : 991.98px)
   /**/  
 @media (max-width : 768px)
+  .wrapper-section
+    min-height: calc(100vh - 60px )
   .exchange
     margin-top: 30px
   .block_exchange_coin
@@ -113,6 +124,32 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width : 575.98px)
+
+  .block_exchange
+    margin-bottom: 20px
+    &.block_exchange_central
+      margin-bottom: -5px
+    &_central img
+      margin: 0 0
+      display: flex
+      align-self: center
+      transform: rotate(90deg)
+    &_form
+      margin-top: 20px
+    &_coin
+      width: 100%
+      &_h2
+        font-size: 20px
+        font-weight: 500
+      &__left
+        width: auto
+        flex-basis: 40%
+      &__right
+        width: auto
+        flex-basis: 40%     
+    &_youAre
+      flex-direction: row !important
+
   .wrap_select_coin
     flex-basis: 50%
   .sign_up

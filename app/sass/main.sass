@@ -61,7 +61,7 @@ header
   &_active
     background-color: #0f212d
   &_collapse
-    z-index: 2
+    z-index: 10
     position: absolute
     top: 60px
     right: 0
@@ -69,7 +69,7 @@ header
   &_main_menu
     width: 255px  
   .navbar
-    padding: 10px
+    padding: 0
     a
       padding: 15px 0
     span
@@ -84,7 +84,7 @@ header
         padding-right: 20px
         font-size: 30px
     ul
-      padding-top: 14px    
+      // padding-top: 14px    
     li:nth-child(2)
       i
         padding-right: 13px
@@ -94,11 +94,17 @@ header
 
 .custom-toggler.navbar-toggler 
   border: none
+  padding: 17px 16px
+  border-radius: 0
+.navbar-toggler.custom-toggler[aria-expanded='false']
+  .navbar-toggler-icon.navbar-toggler-icon
+    background-image: url("../img/toggler.png")        
+// .navbar-toggler-icon.navbar-toggler-icon_custom
+.navbar-toggler.custom-toggler[aria-expanded='true']
+  background-color: #0f212d
+  .navbar-toggler-icon.navbar-toggler-icon 
+    background-image: url("../img/x.png") 
 
-.custom-toggler .navbar-toggler-icon
-  background-image: url("../img/toggler.png")        
-.navbar-toggler-icon.navbar-toggler-icon_custom
-  background-image: url("../img/x.png")
 
 .incorect_email
   background-color: #27242e
@@ -655,7 +661,8 @@ img
     font-size: 35px
     font-weight: 300
     margin: 0 auto
-    padding: 24px 0 54px 0 
+    padding: 24px 0 54px 0
+    color: #fff 
 .coin_color_line
   margin: auto
   width: 42px
@@ -980,14 +987,14 @@ img
   margin-top: 180px
 
 .blockExchange_select
-  background: transparent
-  display: flex
-  flex-direction: row
-  height: 67px
-  width: 360px
-  border-radius: 10px
-  border: 1px solid #3a5364
-  align-items: center
+  // background: transparent
+   display: flex
+  // flex-direction: row
+  // height: 67px
+    width: 80%
+  // border-radius: 10px
+  // border: 1px solid #3a5364
+  // align-items: center
   &_option
     background: url('../img/bitcoin_small.png')
 .block_exchange_dropdown
@@ -1006,11 +1013,13 @@ li.block_exchange_button
   margin-bottom: 50px
   justify-content: space-between
   &_form
-    margin-top: 70px !important
+    margin-top: 70px 
   &_bigheader
     display: block
     text-align: center
     color: #fff
+    padding-top: 40px
+    font-weight: 300
   &_sending
     flex-direction: column
     align-items: center
@@ -1087,8 +1096,8 @@ li.block_exchange_button
     text-align: center
     font-family: "Proxima Nova"
     font-size: 25px
-    font-weight: 400
-    margin-bottom: 28px
+    font-weight: 300
+    margin: 28px 0
   &_button
     background: transparent
     display: flex
@@ -1442,7 +1451,7 @@ p.modal_receive_p
 .select2-dropdown
   border: solid 2px #3a5364
 .select2-selection.select2-selection--single
-  border: solid 2px #3a5364 
+  border: solid 1px #3a5364 
 
 
 //  select coin
@@ -1484,6 +1493,8 @@ p.modal_receive_p
 #sign_form
   .form-group
     margin-bottom: 0  
+.test
+  background-color: red    
 
 @import "media.sass"
 @import "round.css"
