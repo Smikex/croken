@@ -93,7 +93,7 @@
         </a>
       </div>
     </div>
-<!-- mobile nav -->
+    <!-- mobile nav -->
     <div class="mobile_nav">
       <nav class="navbar">
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -104,8 +104,8 @@
           <nav class="main-menu mobile_nav_main_menu">
             <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <li>
-                <a class="nav-link " id="v-pills-Portfolio-tab" data-toggle="pill" data-toggle="collapse" href="#v-pills-Portfolio" role="tab" aria-controls="v-pills-Portfolio"
-                  aria-selected="true">
+                <a class="nav-link " id="v-pills-Portfolio-tab" data-toggle="pill" data-toggle="collapse" href="#v-pills-Portfolio" role="tab"
+                  aria-controls="v-pills-Portfolio" aria-selected="true">
                   <span>
                     <i class="icon-1"></i>Portfolio</span>
                 </a>
@@ -334,48 +334,53 @@
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
+        <!-- wallet -->
+
+        <!-- left tabs coins -->
         <div class="tab-pane fade" id="v-pills-Wallet" role="tabpanel" aria-labelledby="v-pills-Wallet-tab">
           <div class="wallet_coins_wrap">
-            <div class="wallet_coins">
+            <div class="wallet_coins wallet_coins_top">
               <div class="wallet_coins_header">
                 <h1>WALLET</h1>
               </div>
-
-               <ul class="nav nav_select_coin" id="pills-tab" role="tablist">
+              <ul class="nav nav_select_coin" id="pills-tab" role="tablist">
                 <li>
-                  <a class="active" id="pills-Bitcoin-tab" data-toggle="pill" href="#pills-Bitcoin" role="tab" aria-controls="pills-Bitcoin"
-                    aria-selected="false">Bitcoin</a>
+                  <a class="active" id="pills-Bitcoin-tab" data-toggle="pill" href="#Bitcoin" role="tab" aria-controls="pills-Bitcoin" aria-selected="false">Bitcoin</a>
                 </li>
                 <li>
-                  <a class="" id="pills-Ethereum-tab" data-toggle="pill" href="#pills-Ethereum" role="tab" aria-controls="pills-Ethereum" aria-selected="false">Ethereum</a>
+                  <a class="" id="pills-Ethereum-tab" data-toggle="pill" href="#Ethereum" role="tab" aria-controls="pills-Ethereum" aria-selected="false">Ethereum</a>
                 </li>
                 <li>
-                  <a class="" id="pills-Bitcoin_Cash-tab" data-toggle="pill" href="#pills-Bitcoin_Cash" role="tab" aria-controls="pills-Bitcoin_Cash"
+                  <a class="" id="pills-Bitcoin_Cash-tab" data-toggle="pill" href="#Bitcoin_Cash" role="tab" aria-controls="pills-Bitcoin_Cash"
                     aria-selected="false">Bitcoin Cash</a>
                 </li>
-                <li> Ripple</li>
-                <li> Binance</li>
-                <li> Namecoin</li>
-                <li> Verge</li>
-                <li> Iconomi</li>
-                <li> VeChain</li>
-              </ul> 
+                <li class="" id="pills-Ripple-tab" data-toggle="pill" href="#Ripple" role="tab" aria-controls="pills-Ripple" aria-selected="false"><a  id="pills-Ripple-tab" data-toggle="pill" href="#Ripple" role="tab" aria-controls="pills-Ripple" aria-selected="false">Ripple</a>
+                </li>
+                <li class="" id="pills-Binance-tab" data-toggle="pill" href="#Binance" role="tab" aria-controls="pills-Binance" aria-selected="false"><a  id="pills-Binance-tab" data-toggle="pill" href="#Binance" role="tab" aria-controls="pills-Binance" aria-selected="false">Binance</a>
+                </li>
+                <li class="" id="pills-Namecoin-tab" data-toggle="pill" href="#Namecoin" role="tab" aria-controls="pills-Namecoin" aria-selected="false"><a  id="pills-Namecoin-tab" data-toggle="pill" href="#Namecoin" role="tab" aria-controls="pills-Namecoin" aria-selected="false">Namecoin</a>
+                </li>
+                <li class="" id="pills-Namecoin-tab" data-toggle="pill" href="#Namecoin" role="tab" aria-controls="pills-Namecoin" aria-selected="false"><a  id="pills-Verge-tab" data-toggle="pill" href="#Verge" role="tab" aria-controls="pills-Verge" aria-selected="false">Verge</a>
+                </li>
+                <li class="" id="pills-Iconomi" data-toggle="pill" href="#Iconomi" role="tab" aria-controls="piIlls-Iconomi" aria-selected="false"><a  id="pills-Iconomi-tab" data-toggle="pill" href="#Iconomi" role="tab" aria-controls="pills-Iconomi" aria-selected="false">Iconomi</a>
+                </li>
+                <li class="" id="pills-VeChain" data-toggle="pill" href="#VeChain" role="tab" aria-controls="pills-VeChain" aria-selected="false"><a  id="pills-VeChain-tab" data-toggle="pill" href="#VeChain" role="tab" aria-controls="pills-VeChain" aria-selected="false">VeChain</a>
+                </li>
+              </ul>
 
               <div class="wrap_select_coin">
-                <select class="select_coin" class="nav" id="pills-tab" role="tablist">
-                  <option> Bitcoin</option>
-                  <option> Ethereum</option>
-                  <option> Bitcoin_Cash</option>
-                  <option> Ripple</option>
-                  <option> Binance</option>
-                  <option> Namecoin</option>
-                  <option> Verge</option>
-                  <option> Iconomi</option>
-                  <option> VeChain</option>
+                <select class="select_coin">
+                  <option value="Bitcoin">Bitcoin</option>
+                  <option value="Ethereum">Ethereum</option>
+                  <option value="Bitcoin_Cash">Bitcoin_Cash</option>
+                  <option value="Ripple">Ripple</option>
+                  <option value="Binance">Binance</option>
+                  <option value="Namecoin">Namecoin</option>
+                  <option value="Verge">Verge</option>
+                  <option value="Iconomi">Iconomi</option>
+                  <option value="VeChain">VeChain</option>
                 </select>
               </div>
 
@@ -384,10 +389,13 @@
                   <img src="img/plus.png" alt=""> Add New</button>
               </div>
             </div>
-            <div class="wallet_coin">
 
+                    <!-- right tabs coins -->
+            <div class="wallet_coin">
               <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade active show" id="pills-Bitcoin" role="tabpanel" aria-labelledby="pills-Bitcoin-tab">
+
+              <!-- coin -->
+                <div class="tab-pane fade active show" id="Bitcoin" role="tabpanel" aria-labelledby="pills-Bitcoin-tab">
                   <div class="operations">
                     <img class="operations_img" src="img/Bitcoin.png" alt="">
                     <h1 class="operations_h1">20.30006080 ETH</h1>
@@ -414,12 +422,12 @@
                         <div class="operation_status  operation_status_main" data-status="received">
                           <div class="operation_status operation_status_leftBlock">
                             <div class="operation_status_wrap_img">
-                            <img class="operation_status_img" src="img/received.png" alt="">
-                          </div>
+                              <img class="operation_status_img" src="img/received.png" alt="">
+                            </div>
                             <div class="operation_status_exchange operation_status_exchange_left ">
                               <span class="operation_status_exchange__span">Received</span>
                             </div>
-                              <div class="operation_status_exchange">  
+                            <div class="operation_status_exchange">
                               <p class="operation_status_exchange__p"> 0.30080 ETH —
                                 <span class="operation_status_exchange__p__span">
                                   $8.30600</span>
@@ -448,20 +456,20 @@
                         </div>
 
                         <div class="operation_status operation_status_main" data-status="received">
-                            <div class="operation_status operation_status_leftBlock">
-                                <div class="operation_status_wrap_img">
-                                <img class="operation_status_img" src="img/received.png" alt="">
-                              </div>
-                                <div class="operation_status_exchange operation_status_exchange_left ">
-                                  <span class="operation_status_exchange__span">Received</span>
-                                </div>
-                                  <div class="operation_status_exchange">  
-                                  <p class="operation_status_exchange__p"> 0.30080 ETH —
-                                    <span class="operation_status_exchange__p__span">
-                                      $8.30600</span>
-                                  </p>
-                                </div>
-                              </div>
+                          <div class="operation_status operation_status_leftBlock">
+                            <div class="operation_status_wrap_img">
+                              <img class="operation_status_img" src="img/received.png" alt="">
+                            </div>
+                            <div class="operation_status_exchange operation_status_exchange_left ">
+                              <span class="operation_status_exchange__span">Received</span>
+                            </div>
+                            <div class="operation_status_exchange">
+                              <p class="operation_status_exchange__p"> 0.30080 ETH —
+                                <span class="operation_status_exchange__p__span">
+                                  $8.30600</span>
+                              </p>
+                            </div>
+                          </div>
                           <div class="operation_status operation_status_centralBlock">
                             <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
                             </p>
@@ -487,12 +495,12 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="tab-pane fade" id="pills-Ethereum" role="tabpanel" aria-labelledby="pills-Ethereum-tab">
+                  <!-- coin -->
+                <div class="tab-pane fade" id="Ethereum" role="tabpanel" aria-labelledby="pills-Ethereum-tab">
                   <div class="operations">
                     <img class="operations_img" src="img/Ethereum.png" alt="">
-                    <h1 class="operations_h1">20.30006080 ETH</h1>
-                    <h2 class="operations_h2">$38.030080</h2>
+                    <h1 class="operations_h1">18.30006080 ETH</h1>
+                    <h2 class="operations_h2">$308.030080</h2>
                     <div class="operations_buttons">
                       <a class="operations_button operations_button_left" data-toggle="modal" data-target="#send">SEND
                         <img src="img/send.png" alt="">
@@ -513,20 +521,20 @@
                     <div class="wallets_coins_content">
                       <div class="operation_table">
                         <div class="operation_status  operation_status_main" data-status="received">
-                            <div class="operation_status operation_status_leftBlock">
-                                <div class="operation_status_wrap_img">
-                                <img class="operation_status_img" src="img/received.png" alt="">
-                              </div>
-                                <div class="operation_status_exchange operation_status_exchange_left ">
-                                  <span class="operation_status_exchange__span">Received</span>
-                                </div>
-                                  <div class="operation_status_exchange">  
-                                  <p class="operation_status_exchange__p"> 0.30080 ETH —
-                                    <span class="operation_status_exchange__p__span">
-                                      $8.30600</span>
-                                  </p>
-                                </div>
-                              </div>
+                          <div class="operation_status operation_status_leftBlock">
+                            <div class="operation_status_wrap_img">
+                              <img class="operation_status_img" src="img/received.png" alt="">
+                            </div>
+                            <div class="operation_status_exchange operation_status_exchange_left ">
+                              <span class="operation_status_exchange__span">Received</span>
+                            </div>
+                            <div class="operation_status_exchange">
+                              <p class="operation_status_exchange__p"> 0.30080 ETH —
+                                <span class="operation_status_exchange__p__span">
+                                  $8.30600</span>
+                              </p>
+                            </div>
+                          </div>
                           <div class="operation_status operation_status_centralBlock">
                             <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
                             </p>
@@ -550,20 +558,20 @@
 
                         <div class="operation_status operation_status_main" data-status="exchanged">
 
-                            <div class="operation_status operation_status_leftBlock">
-                                <div class="operation_status_wrap_img">
-                                <img class="operation_status_img" src="img/exchanged.png" alt="">
-                              </div>
-                                <div class="operation_status_exchange operation_status_exchange_left ">
-                                  <span class="operation_status_exchange__span">Exchanged</span>
-                                </div>
-                                  <div class="operation_status_exchange">  
-                                  <p class="operation_status_exchange__p"> 0.30080 ETH —
-                                    <span class="operation_status_exchange__p__span">
-                                      $8.30600</span>
-                                  </p>
-                                </div>
-                              </div>
+                          <div class="operation_status operation_status_leftBlock">
+                            <div class="operation_status_wrap_img">
+                              <img class="operation_status_img" src="img/exchanged.png" alt="">
+                            </div>
+                            <div class="operation_status_exchange operation_status_exchange_left ">
+                              <span class="operation_status_exchange__span">Exchanged</span>
+                            </div>
+                            <div class="operation_status_exchange">
+                              <p class="operation_status_exchange__p"> 0.30080 ETH —
+                                <span class="operation_status_exchange__p__span">
+                                  $8.30600</span>
+                              </p>
+                            </div>
+                          </div>
                           <div class="operation_status operation_status_centralBlock">
                             <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
                             </p>
@@ -584,21 +592,730 @@
                             </div>
                           </div>
                         </div>
-
                       </div>
                     </div>
                   </div>
+                </div>
+              <div class="tab-pane fade" id="Bitcoin_Cash" role="tabpanel" aria-labelledby="pills-Bitcoin_Cash-tab">
+                <div class="operations">
+                  <img class="operations_img" src="img/Bitcoin.png" alt="">
+                  <h1 class="operations_h1">5.30006080 ETH</h1>
+                  <h2 class="operations_h2">$16.030080</h2>
+                  <div class="operations_buttons">
+                    <a class="operations_button operations_button_left" data-toggle="modal" data-target="#send">SEND
+                      <img src="img/send.png" alt="">
+                    </a>
+                    <a class="operations_button operations_button_right" data-toggle="modal" data-target="#receive">RECEIVE
+                      <img src="img/receive_w.png" alt="">
+                    </a>
+                  </div>
+                  <ul class="operations_ul">
+                    <li class="operations_ul_item operations_ul_item_active">ALL</li>
+                    <li class="operations_ul_item" data-status="sent">SENT</li>
+                    <li class="operations_ul_item" data-status="received">RECEIVED</li>
+                    <li class="operations_ul_item" data-status="exchanged">EXCAHANGED</li>
+                  </ul>
+                </div>
 
+                <div class="wallets_coins_main">
+                  <div class="wallets_coins_content">
+                    <div class="operation_table">
+                      <div class="operation_status  operation_status_main" data-status="received">
+                        <div class="operation_status operation_status_leftBlock">
+                          <div class="operation_status_wrap_img">
+                            <img class="operation_status_img" src="img/received.png" alt="">
+                          </div>
+                          <div class="operation_status_exchange operation_status_exchange_left ">
+                            <span class="operation_status_exchange__span">Received</span>
+                          </div>
+                          <div class="operation_status_exchange">
+                            <p class="operation_status_exchange__p"> 0.30080 ETH —
+                              <span class="operation_status_exchange__p__span">
+                                $8.30600</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="operation_status operation_status_centralBlock">
+                          <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                          </p>
+                        </div>
+                        <div class="operation_status operation_status_rightBlock">
+                          <span class="operation_status_time">2 hours ago</span>
+                        </div>
+                        <div class="operation_status operation_status_descr hidden">
+                          <div class="operation_status_descr_info">
+                            <p>Date:
+                              <span>Sunday, August 28th 2018, 20:23 PM</span>
+                            </p>
+                          </div>
+                          <div class="operation_status_descr_info">
+                            <p>Transaction ID:
+                              <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="operation_status operation_status_main" data-status="exchanged">
+
+                        <div class="operation_status operation_status_leftBlock">
+                          <div class="operation_status_wrap_img">
+                            <img class="operation_status_img" src="img/exchanged.png" alt="">
+                          </div>
+                          <div class="operation_status_exchange operation_status_exchange_left ">
+                            <span class="operation_status_exchange__span">Exchanged</span>
+                          </div>
+                          <div class="operation_status_exchange">
+                            <p class="operation_status_exchange__p"> 0.30080 ETH —
+                              <span class="operation_status_exchange__p__span">
+                                $8.30600</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="operation_status operation_status_centralBlock">
+                          <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                          </p>
+                        </div>
+                        <div class="operation_status operation_status_rightBlock">
+                          <span class="operation_status_time">2 hours ago</span>
+                        </div>
+                        <div class="operation_status operation_status_descr hidden">
+                          <div class="operation_status_descr_info">
+                            <p>Date:
+                              <span>Sunday, August 28th 2018, 20:23 PM</span>
+                            </p>
+                          </div>
+                          <div class="operation_status_descr_info">
+                            <p>Transaction ID:
+                              <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="pills-Bitcoin_Cash" role="tabpanel" aria-labelledby="pills-Bitcoin_Cash-tab">3
+              <!-- coin -->
+              <div class="tab-pane fade" id="Ripple" role="tabpanel" aria-labelledby="pills-Ripple-tab">
+                <div class="operations">
+                  <img class="operations_img" src="img/Ripple.png" alt="">
+                  <h1 class="operations_h1">54.30006080 ETH</h1>
+                  <h2 class="operations_h2">$1.030080</h2>
+                  <div class="operations_buttons">
+                    <a class="operations_button operations_button_left" data-toggle="modal" data-target="#send">SEND
+                      <img src="img/send.png" alt="">
+                    </a>
+                    <a class="operations_button operations_button_right" data-toggle="modal" data-target="#receive">RECEIVE
+                      <img src="img/receive_w.png" alt="">
+                    </a>
+                  </div>
+                  <ul class="operations_ul">
+                    <li class="operations_ul_item operations_ul_item_active">ALL</li>
+                    <li class="operations_ul_item" data-status="sent">SENT</li>
+                    <li class="operations_ul_item" data-status="received">RECEIVED</li>
+                    <li class="operations_ul_item" data-status="exchanged">EXCAHANGED</li>
+                  </ul>
+                </div>
+
+                <div class="wallets_coins_main">
+                  <div class="wallets_coins_content">
+                    <div class="operation_table">
+                      <div class="operation_status  operation_status_main" data-status="received">
+                        <div class="operation_status operation_status_leftBlock">
+                          <div class="operation_status_wrap_img">
+                            <img class="operation_status_img" src="img/received.png" alt="">
+                          </div>
+                          <div class="operation_status_exchange operation_status_exchange_left ">
+                            <span class="operation_status_exchange__span">Received</span>
+                          </div>
+                          <div class="operation_status_exchange">
+                            <p class="operation_status_exchange__p"> 0.30080 ETH —
+                              <span class="operation_status_exchange__p__span">
+                                $8.30600</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="operation_status operation_status_centralBlock">
+                          <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                          </p>
+                        </div>
+                        <div class="operation_status operation_status_rightBlock">
+                          <span class="operation_status_time">2 hours ago</span>
+                        </div>
+                        <div class="operation_status operation_status_descr hidden">
+                          <div class="operation_status_descr_info">
+                            <p>Date:
+                              <span>Sunday, August 28th 2018, 20:23 PM</span>
+                            </p>
+                          </div>
+                          <div class="operation_status_descr_info">
+                            <p>Transaction ID:
+                              <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="operation_status operation_status_main" data-status="exchanged">
+
+                        <div class="operation_status operation_status_leftBlock">
+                          <div class="operation_status_wrap_img">
+                            <img class="operation_status_img" src="img/exchanged.png" alt="">
+                          </div>
+                          <div class="operation_status_exchange operation_status_exchange_left ">
+                            <span class="operation_status_exchange__span">Exchanged</span>
+                          </div>
+                          <div class="operation_status_exchange">
+                            <p class="operation_status_exchange__p"> 0.30080 ETH —
+                              <span class="operation_status_exchange__p__span">
+                                $8.30600</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="operation_status operation_status_centralBlock">
+                          <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                          </p>
+                        </div>
+                        <div class="operation_status operation_status_rightBlock">
+                          <span class="operation_status_time">2 hours ago</span>
+                        </div>
+                        <div class="operation_status operation_status_descr hidden">
+                          <div class="operation_status_descr_info">
+                            <p>Date:
+                              <span>Sunday, August 28th 2018, 20:23 PM</span>
+                            </p>
+                          </div>
+                          <div class="operation_status_descr_info">
+                            <p>Transaction ID:
+                              <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <!-- coin -->
+              <div class="tab-pane fade" id="Binance" role="tabpanel" aria-labelledby="pills-Binance-tab">
+                  <div class="operations">
+                    <img class="operations_img" src="img/Binance.png" alt="">
+                    <h1 class="operations_h1">54.30006080 ETH</h1>
+                    <h2 class="operations_h2">$1.030080</h2>
+                    <div class="operations_buttons">
+                      <a class="operations_button operations_button_left" data-toggle="modal" data-target="#send">SEND
+                        <img src="img/send.png" alt="">
+                      </a>
+                      <a class="operations_button operations_button_right" data-toggle="modal" data-target="#receive">RECEIVE
+                        <img src="img/receive_w.png" alt="">
+                      </a>
+                    </div>
+                    <ul class="operations_ul">
+                      <li class="operations_ul_item operations_ul_item_active">ALL</li>
+                      <li class="operations_ul_item" data-status="sent">SENT</li>
+                      <li class="operations_ul_item" data-status="received">RECEIVED</li>
+                      <li class="operations_ul_item" data-status="exchanged">EXCAHANGED</li>
+                    </ul>
+                  </div>
+  
+                  <div class="wallets_coins_main">
+                    <div class="wallets_coins_content">
+                      <div class="operation_table">
+                        <div class="operation_status  operation_status_main" data-status="received">
+                          <div class="operation_status operation_status_leftBlock">
+                            <div class="operation_status_wrap_img">
+                              <img class="operation_status_img" src="img/received.png" alt="">
+                            </div>
+                            <div class="operation_status_exchange operation_status_exchange_left ">
+                              <span class="operation_status_exchange__span">Received</span>
+                            </div>
+                            <div class="operation_status_exchange">
+                              <p class="operation_status_exchange__p"> 0.30080 ETH —
+                                <span class="operation_status_exchange__p__span">
+                                  $8.30600</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="operation_status operation_status_centralBlock">
+                            <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                            </p>
+                          </div>
+                          <div class="operation_status operation_status_rightBlock">
+                            <span class="operation_status_time">2 hours ago</span>
+                          </div>
+                          <div class="operation_status operation_status_descr hidden">
+                            <div class="operation_status_descr_info">
+                              <p>Date:
+                                <span>Sunday, August 28th 2018, 20:23 PM</span>
+                              </p>
+                            </div>
+                            <div class="operation_status_descr_info">
+                              <p>Transaction ID:
+                                <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="operation_status operation_status_main" data-status="exchanged">
+  
+                          <div class="operation_status operation_status_leftBlock">
+                            <div class="operation_status_wrap_img">
+                              <img class="operation_status_img" src="img/exchanged.png" alt="">
+                            </div>
+                            <div class="operation_status_exchange operation_status_exchange_left ">
+                              <span class="operation_status_exchange__span">Exchanged</span>
+                            </div>
+                            <div class="operation_status_exchange">
+                              <p class="operation_status_exchange__p"> 0.30080 ETH —
+                                <span class="operation_status_exchange__p__span">
+                                  $8.30600</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="operation_status operation_status_centralBlock">
+                            <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                            </p>
+                          </div>
+                          <div class="operation_status operation_status_rightBlock">
+                            <span class="operation_status_time">2 hours ago</span>
+                          </div>
+                          <div class="operation_status operation_status_descr hidden">
+                            <div class="operation_status_descr_info">
+                              <p>Date:
+                                <span>Sunday, August 28th 2018, 20:23 PM</span>
+                              </p>
+                            </div>
+                            <div class="operation_status_descr_info">
+                              <p>Transaction ID:
+                                <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- coin -->
+              <div class="tab-pane fade" id="Namecoin" role="tabpanel" aria-labelledby="pills-Namecoin-tab">
+                  <div class="operations">
+                    <img class="operations_img" src="img/Namecoin.png" alt="">
+                    <h1 class="operations_h1">54.30006080 ETH</h1>
+                    <h2 class="operations_h2">$1.030080</h2>
+                    <div class="operations_buttons">
+                      <a class="operations_button operations_button_left" data-toggle="modal" data-target="#send">SEND
+                        <img src="img/send.png" alt="">
+                      </a>
+                      <a class="operations_button operations_button_right" data-toggle="modal" data-target="#receive">RECEIVE
+                        <img src="img/receive_w.png" alt="">
+                      </a>
+                    </div>
+                    <ul class="operations_ul">
+                      <li class="operations_ul_item operations_ul_item_active">ALL</li>
+                      <li class="operations_ul_item" data-status="sent">SENT</li>
+                      <li class="operations_ul_item" data-status="received">RECEIVED</li>
+                      <li class="operations_ul_item" data-status="exchanged">EXCAHANGED</li>
+                    </ul>
+                  </div>
+  
+                  <div class="wallets_coins_main">
+                    <div class="wallets_coins_content">
+                      <div class="operation_table">
+                        <div class="operation_status  operation_status_main" data-status="received">
+                          <div class="operation_status operation_status_leftBlock">
+                            <div class="operation_status_wrap_img">
+                              <img class="operation_status_img" src="img/received.png" alt="">
+                            </div>
+                            <div class="operation_status_exchange operation_status_exchange_left ">
+                              <span class="operation_status_exchange__span">Received</span>
+                            </div>
+                            <div class="operation_status_exchange">
+                              <p class="operation_status_exchange__p"> 0.30080 ETH —
+                                <span class="operation_status_exchange__p__span">
+                                  $8.30600</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="operation_status operation_status_centralBlock">
+                            <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                            </p>
+                          </div>
+                          <div class="operation_status operation_status_rightBlock">
+                            <span class="operation_status_time">2 hours ago</span>
+                          </div>
+                          <div class="operation_status operation_status_descr hidden">
+                            <div class="operation_status_descr_info">
+                              <p>Date:
+                                <span>Sunday, August 28th 2018, 20:23 PM</span>
+                              </p>
+                            </div>
+                            <div class="operation_status_descr_info">
+                              <p>Transaction ID:
+                                <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="operation_status operation_status_main" data-status="exchanged">
+  
+                          <div class="operation_status operation_status_leftBlock">
+                            <div class="operation_status_wrap_img">
+                              <img class="operation_status_img" src="img/exchanged.png" alt="">
+                            </div>
+                            <div class="operation_status_exchange operation_status_exchange_left ">
+                              <span class="operation_status_exchange__span">Exchanged</span>
+                            </div>
+                            <div class="operation_status_exchange">
+                              <p class="operation_status_exchange__p"> 0.30080 ETH —
+                                <span class="operation_status_exchange__p__span">
+                                  $8.30600</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="operation_status operation_status_centralBlock">
+                            <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                            </p>
+                          </div>
+                          <div class="operation_status operation_status_rightBlock">
+                            <span class="operation_status_time">2 hours ago</span>
+                          </div>
+                          <div class="operation_status operation_status_descr hidden">
+                            <div class="operation_status_descr_info">
+                              <p>Date:
+                                <span>Sunday, August 28th 2018, 20:23 PM</span>
+                              </p>
+                            </div>
+                            <div class="operation_status_descr_info">
+                              <p>Transaction ID:
+                                <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- coin -->
+              <div class="tab-pane fade" id="Verge" role="tabpanel" aria-labelledby="pills-Verge-tab">
+                <div class="operations">
+                  <img class="operations_img" src="img/Verge.png" alt="">
+                  <h1 class="operations_h1">54.30006080 ETH</h1>
+                  <h2 class="operations_h2">$1.030080</h2>
+                  <div class="operations_buttons">
+                    <a class="operations_button operations_button_left" data-toggle="modal" data-target="#send">SEND
+                      <img src="img/send.png" alt="">
+                    </a>
+                    <a class="operations_button operations_button_right" data-toggle="modal" data-target="#receive">RECEIVE
+                      <img src="img/receive_w.png" alt="">
+                    </a>
+                  </div>
+                  <ul class="operations_ul">
+                    <li class="operations_ul_item operations_ul_item_active">ALL</li>
+                    <li class="operations_ul_item" data-status="sent">SENT</li>
+                    <li class="operations_ul_item" data-status="received">RECEIVED</li>
+                    <li class="operations_ul_item" data-status="exchanged">EXCAHANGED</li>
+                  </ul>
+                </div>
+
+                <div class="wallets_coins_main">
+                  <div class="wallets_coins_content">
+                    <div class="operation_table">
+                      <div class="operation_status  operation_status_main" data-status="received">
+                        <div class="operation_status operation_status_leftBlock">
+                          <div class="operation_status_wrap_img">
+                            <img class="operation_status_img" src="img/received.png" alt="">
+                          </div>
+                          <div class="operation_status_exchange operation_status_exchange_left ">
+                            <span class="operation_status_exchange__span">Received</span>
+                          </div>
+                          <div class="operation_status_exchange">
+                            <p class="operation_status_exchange__p"> 0.30080 ETH —
+                              <span class="operation_status_exchange__p__span">
+                                $8.30600</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="operation_status operation_status_centralBlock">
+                          <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                          </p>
+                        </div>
+                        <div class="operation_status operation_status_rightBlock">
+                          <span class="operation_status_time">2 hours ago</span>
+                        </div>
+                        <div class="operation_status operation_status_descr hidden">
+                          <div class="operation_status_descr_info">
+                            <p>Date:
+                              <span>Sunday, August 28th 2018, 20:23 PM</span>
+                            </p>
+                          </div>
+                          <div class="operation_status_descr_info">
+                            <p>Transaction ID:
+                              <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="operation_status operation_status_main" data-status="exchanged">
+
+                        <div class="operation_status operation_status_leftBlock">
+                          <div class="operation_status_wrap_img">
+                            <img class="operation_status_img" src="img/exchanged.png" alt="">
+                          </div>
+                          <div class="operation_status_exchange operation_status_exchange_left ">
+                            <span class="operation_status_exchange__span">Exchanged</span>
+                          </div>
+                          <div class="operation_status_exchange">
+                            <p class="operation_status_exchange__p"> 0.30080 ETH —
+                              <span class="operation_status_exchange__p__span">
+                                $8.30600</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="operation_status operation_status_centralBlock">
+                          <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                          </p>
+                        </div>
+                        <div class="operation_status operation_status_rightBlock">
+                          <span class="operation_status_time">2 hours ago</span>
+                        </div>
+                        <div class="operation_status operation_status_descr hidden">
+                          <div class="operation_status_descr_info">
+                            <p>Date:
+                              <span>Sunday, August 28th 2018, 20:23 PM</span>
+                            </p>
+                          </div>
+                          <div class="operation_status_descr_info">
+                            <p>Transaction ID:
+                              <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- coin -->
+              <div class="tab-pane fade" id="Iconomi" role="tabpanel" aria-labelledby="pills-Iconomi-tab">
+                <div class="operations">
+                  <img class="operations_img" src="img/Iconomi.png" alt="">
+                  <h1 class="operations_h1">54.30006080 ETH</h1>
+                  <h2 class="operations_h2">$1.030080</h2>
+                  <div class="operations_buttons">
+                    <a class="operations_button operations_button_left" data-toggle="modal" data-target="#send">SEND
+                      <img src="img/send.png" alt="">
+                    </a>
+                    <a class="operations_button operations_button_right" data-toggle="modal" data-target="#receive">RECEIVE
+                      <img src="img/receive_w.png" alt="">
+                    </a>
+                  </div>
+                  <ul class="operations_ul">
+                    <li class="operations_ul_item operations_ul_item_active">ALL</li>
+                    <li class="operations_ul_item" data-status="sent">SENT</li>
+                    <li class="operations_ul_item" data-status="received">RECEIVED</li>
+                    <li class="operations_ul_item" data-status="exchanged">EXCAHANGED</li>
+                  </ul>
+                </div>
+
+                <div class="wallets_coins_main">
+                  <div class="wallets_coins_content">
+                    <div class="operation_table">
+                      <div class="operation_status  operation_status_main" data-status="received">
+                        <div class="operation_status operation_status_leftBlock">
+                          <div class="operation_status_wrap_img">
+                            <img class="operation_status_img" src="img/received.png" alt="">
+                          </div>
+                          <div class="operation_status_exchange operation_status_exchange_left ">
+                            <span class="operation_status_exchange__span">Received</span>
+                          </div>
+                          <div class="operation_status_exchange">
+                            <p class="operation_status_exchange__p"> 0.30080 ETH —
+                              <span class="operation_status_exchange__p__span">
+                                $8.30600</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="operation_status operation_status_centralBlock">
+                          <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                          </p>
+                        </div>
+                        <div class="operation_status operation_status_rightBlock">
+                          <span class="operation_status_time">2 hours ago</span>
+                        </div>
+                        <div class="operation_status operation_status_descr hidden">
+                          <div class="operation_status_descr_info">
+                            <p>Date:
+                              <span>Sunday, August 28th 2018, 20:23 PM</span>
+                            </p>
+                          </div>
+                          <div class="operation_status_descr_info">
+                            <p>Transaction ID:
+                              <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="operation_status operation_status_main" data-status="exchanged">
+
+                        <div class="operation_status operation_status_leftBlock">
+                          <div class="operation_status_wrap_img">
+                            <img class="operation_status_img" src="img/exchanged.png" alt="">
+                          </div>
+                          <div class="operation_status_exchange operation_status_exchange_left ">
+                            <span class="operation_status_exchange__span">Exchanged</span>
+                          </div>
+                          <div class="operation_status_exchange">
+                            <p class="operation_status_exchange__p"> 0.30080 ETH —
+                              <span class="operation_status_exchange__p__span">
+                                $8.30600</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="operation_status operation_status_centralBlock">
+                          <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                          </p>
+                        </div>
+                        <div class="operation_status operation_status_rightBlock">
+                          <span class="operation_status_time">2 hours ago</span>
+                        </div>
+                        <div class="operation_status operation_status_descr hidden">
+                          <div class="operation_status_descr_info">
+                            <p>Date:
+                              <span>Sunday, August 28th 2018, 20:23 PM</span>
+                            </p>
+                          </div>
+                          <div class="operation_status_descr_info">
+                            <p>Transaction ID:
+                              <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- coin -->
+              <div class="tab-pane fade" id="VeChain" role="tabpanel" aria-labelledby="pills-VeChain-tab">
+                <div class="operations">
+                  <img class="operations_img" src="img/VeChain.png" alt="">
+                  <h1 class="operations_h1">54.30006080 ETH</h1>
+                  <h2 class="operations_h2">$1.030080</h2>
+                  <div class="operations_buttons">
+                    <a class="operations_button operations_button_left" data-toggle="modal" data-target="#send">SEND
+                      <img src="img/send.png" alt="">
+                    </a>
+                    <a class="operations_button operations_button_right" data-toggle="modal" data-target="#receive">RECEIVE
+                      <img src="img/receive_w.png" alt="">
+                    </a>
+                  </div>
+                  <ul class="operations_ul">
+                    <li class="operations_ul_item operations_ul_item_active">ALL</li>
+                    <li class="operations_ul_item" data-status="sent">SENT</li>
+                    <li class="operations_ul_item" data-status="received">RECEIVED</li>
+                    <li class="operations_ul_item" data-status="exchanged">EXCAHANGED</li>
+                  </ul>
+                </div>
+
+                <div class="wallets_coins_main">
+                  <div class="wallets_coins_content">
+                    <div class="operation_table">
+                      <div class="operation_status  operation_status_main" data-status="received">
+                        <div class="operation_status operation_status_leftBlock">
+                          <div class="operation_status_wrap_img">
+                            <img class="operation_status_img" src="img/received.png" alt="">
+                          </div>
+                          <div class="operation_status_exchange operation_status_exchange_left ">
+                            <span class="operation_status_exchange__span">Received</span>
+                          </div>
+                          <div class="operation_status_exchange">
+                            <p class="operation_status_exchange__p"> 0.30080 ETH —
+                              <span class="operation_status_exchange__p__span">
+                                $8.30600</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="operation_status operation_status_centralBlock">
+                          <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                          </p>
+                        </div>
+                        <div class="operation_status operation_status_rightBlock">
+                          <span class="operation_status_time">2 hours ago</span>
+                        </div>
+                        <div class="operation_status operation_status_descr hidden">
+                          <div class="operation_status_descr_info">
+                            <p>Date:
+                              <span>Sunday, August 28th 2018, 20:23 PM</span>
+                            </p>
+                          </div>
+                          <div class="operation_status_descr_info">
+                            <p>Transaction ID:
+                              <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="operation_status operation_status_main" data-status="exchanged">
+
+                        <div class="operation_status operation_status_leftBlock">
+                          <div class="operation_status_wrap_img">
+                            <img class="operation_status_img" src="img/exchanged.png" alt="">
+                          </div>
+                          <div class="operation_status_exchange operation_status_exchange_left ">
+                            <span class="operation_status_exchange__span">Exchanged</span>
+                          </div>
+                          <div class="operation_status_exchange">
+                            <p class="operation_status_exchange__p"> 0.30080 ETH —
+                              <span class="operation_status_exchange__p__span">
+                                $8.30600</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="operation_status operation_status_centralBlock">
+                          <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
+                          </p>
+                        </div>
+                        <div class="operation_status operation_status_rightBlock">
+                          <span class="operation_status_time">2 hours ago</span>
+                        </div>
+                        <div class="operation_status operation_status_descr hidden">
+                          <div class="operation_status_descr_info">
+                            <p>Date:
+                              <span>Sunday, August 28th 2018, 20:23 PM</span>
+                            </p>
+                          </div>
+                          <div class="operation_status_descr_info">
+                            <p>Transaction ID:
+                              <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>  
             </div>
           </div>
-        </div>
+        </div>  
+
+
+        <!-- tab Ecchange -->
+
         <div class="tab-pane fade" id="v-pills-Exchange" role="tabpanel" aria-labelledby="v-pills-Exchange-tab">
           <div class="exchange  exchange_top">
-              <h1 class="block_exchange_bigheader">Exchange</h1>
+            <h1 class="block_exchange_bigheader">Exchange</h1>
             <div class="block_exchange">
 
               <div class="block_exchange block_exchange_coin">
@@ -610,25 +1327,25 @@
                 </form>
 
                 <form class="" action="">
-                    <div class="block_exchange_form">
-    
-                      <div class="input-group block_exchange_form_input block_exchange_form_input_top">
-                        <input type="number" class="form-control" placeholder="0.2003" aria-describedby="basic-addon1">
-                        <div class="input-group-apppend">
-                          <span class="input-group-text" id="basic-addon1">BTC</span>
-                        </div>
-                      </div>
-                      <div class="input-group block_exchange_form_input block_exchange_form_input_bottom">
-                        <input type="number" class="form-control" placeholder="200.38" aria-label="number" aria-describedby="basic-addon1" disabled>
-                        <div class="input-group-apppend">
-                          <span class="input-group-text" id="basic-addon1">USD</span>
-                        </div>
+                  <div class="block_exchange_form">
+
+                    <div class="input-group block_exchange_form_input block_exchange_form_input_top">
+                      <input type="number" class="form-control" placeholder="0.2003" aria-describedby="basic-addon1">
+                      <div class="input-group-apppend">
+                        <span class="input-group-text" id="basic-addon1">BTC</span>
                       </div>
                     </div>
-                  </form>
+                    <div class="input-group block_exchange_form_input block_exchange_form_input_bottom">
+                      <input type="number" class="form-control" placeholder="200.38" aria-label="number" aria-describedby="basic-addon1" disabled>
+                      <div class="input-group-apppend">
+                        <span class="input-group-text" id="basic-addon1">USD</span>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
-              <div class="block_exchange block_exchange_central">
-                <img src="img/exchange.png" alt="">
+              <div class="block_exchange block_exchange_central block_exchange_central_top">
+                <img class="block_exchange_central_img__top" src="img/exchange.png" alt="">
               </div>
               <div class="block_exchange block_exchange_coin">
                 <h1 class="block_exchange_header">Receive</h1>
@@ -637,26 +1354,26 @@
                   </select>
                 </form>
                 <form class="" action="">
-                    <div class="block_exchange_form">
-    
-                      <div class="input-group block_exchange_form_input block_exchange_form_input_top block_exchange_form_input_top__receive">
-                        <input type="number" class="form-control " placeholder="0.2003" aria-describedby="basic-addon1">
-                        <div class="input-group-apppend">
-                          <span class="input-group-text" id="basic-addon1">BTC</span>
-                        </div>
-                      </div>
-                      <div class="input-group block_exchange_form_input block_exchange_form_input_bottom">
-                        <input type="number" class="form-control" placeholder="200.32" aria-label="number" aria-describedby="basic-addon1" disabled>
-                        <div class="input-group-apppend">
-                          <span class="input-group-text" id="basic-addon1">USD</span>
-                        </div>
+                  <div class="block_exchange_form">
+
+                    <div class="input-group block_exchange_form_input block_exchange_form_input_top block_exchange_form_input_top__receive">
+                      <input type="number" class="form-control " placeholder="0.2003" aria-describedby="basic-addon1">
+                      <div class="input-group-apppend">
+                        <span class="input-group-text" id="basic-addon1">BTC</span>
                       </div>
                     </div>
-                  </form>
+                    <div class="input-group block_exchange_form_input block_exchange_form_input_bottom">
+                      <input type="number" class="form-control" placeholder="200.32" aria-label="number" aria-describedby="basic-addon1" disabled>
+                      <div class="input-group-apppend">
+                        <span class="input-group-text" id="basic-addon1">USD</span>
+                      </div>
+                    </div>
+                  </div>
+                </form>
 
               </div>
             </div>
-            <div class="block_exchange block_exchange_youAre">
+            <div class="block_exchange block_exchange_youAre ">
               <div class="block_exchange_coin block_exchange_coin__left">
                 <p class="block_exchange_coin_p">You Are Exchanging</p>
                 <h2 class="block_exchange_coin_h2">0.2003 BTC</h2>
@@ -664,11 +1381,11 @@
 
               </div>
               <div class="block_exchange_central">
-                <img class="block_exchange_central_img_second" src="img/exchange.png" alt="">
+                <img class="block_exchange_central_img_second block_exchange_central_img_second__display" src="img/exchange.png" alt="">
               </div>
               <div class="block_exchange_coin  block_exchange_coin__right">
                 <p class="block_exchange_coin_p">You Will Receive</p>
-                <h2 class="block_exchange_coin_h2 block_exchange_coin_h2__right">23.28002 ETH</h2>
+                <h2 class="block_exchange_coin_h2 block_exchange_coin_h2__right">23.28003 ETH</h2>
                 <p class="block_exchange_coin_p block_exchange_coin_p__bottom">$2000.32</p>
               </div>
 
@@ -694,14 +1411,14 @@
               </div>
               <h1 class="block_exchange_sending_h1">Sending assets to ShapeShift</h1>
               <h2 class="block_exchange_sending_h2">Your exchange will take a minute You can safety use</h2>
-              <div class="block_exchange block_exchange_youAre">
-                <div class="block_exchange_coin block_exchange_coin__left">
+              <div class="block_exchange block_exchange_youAre block_exchange_youAre_next">
+                <div class="block_exchange_coin block_exchange_youAre_next__left">
                   <p class="block_exchange_coin_p">You Are Exchanging</p>
                   <h2 class="block_exchange_coin_h2">0.2003 BTC</h2>
                   <p class="block_exchange_coin_p block_exchange_coin_p__bottom">$2000.38</p>
                 </div>
-                <div class="block_exchange_central">
-                  <img  src="img/exchange.png" alt="">
+                <div class="block_exchange_central ">
+                  <img class="block_exchange_central_sending block_exchange_central_sending_next" src="img/exchange.png" alt="">
                 </div>
                 <div class="block_exchange_coin">
                   <p class="block_exchange_coin_p">You Will Receive</p>
@@ -713,15 +1430,12 @@
               <a class="block_exchange_sending_a" href="main.html#v-pills-Exchange"> Go back to exchange</a>
 
             </div>
-
-
           </div>
-
         </div>
-        <div class="tab-pane fade" id="v-pills-Backup" role="tabpanel" aria-labelledby="v-pills-Backup-tab">4
+        <div class="tab-pane fade" id="v-pills-Backup" role="tabpanel" aria-labelledby="v-pills-Backup-tab">Backup
         </div>
         <div class="tab-pane fade" id="v-pills-Settings" role="tabpanel" aria-labelledby="v-pills-Settings-tab">
-          4
+          Settings
         </div>
         <div class="tab-pane fade" id="v-pills-Help" role="tabpanel" aria-labelledby="v-pills-Help-tab">Help
         </div>
@@ -740,17 +1454,14 @@
             <h2 class="modal-title" id="exampleModalLabel">Add New Coin</h2>
             <p>Choose Coin from List:</p>
             <div class="block_exchange_dropdown">
-              <button class="block_exchange_button" type="button" id="dropdown_exchange_left" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <img class="block_exchange_button_img__coin" src="img/bitcoin_small.png" alt="">
-                <p>BITCOIN</p>
-                <img src="img/toggle_down.png" alt="">
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdown_exchange_left">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <!-- select2 -->
+              <select name="" id="block_exchange_dropdown">
+                <option>Bitcoin</option>
+                <option>Ethereum</option>
+                <option>Bitcoin Cash</option>
+                <option>Ripple</option>
+                <option>Binance</option>
+              </select>
             </div>
             <button type="button" class="btn modal-header_button">Add New Coin</button>
           </div>
@@ -775,7 +1486,7 @@
               <input type="text" class="form-control" placeholder="Ethereum Address" aria-label="Username" aria-describedby="basic-addon1">
             </div>
             <p class="modal_send_span">from</p>
-            <div class="select_from "></div>
+            <div class="select_from"></div>
             <p class="modal_send_p__bottom">You are sending
               <span>6.30080 ETH —</span>
               <span>$8.300030</span>
@@ -790,7 +1501,6 @@
                 <span> 0.002302 ETH — </span>
                 <span>$0.000030</span>
               </p>
-
             </div>
           </div>
         </div>
@@ -868,6 +1578,51 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
   <script>
+    // select2 addNew
+
+
+    $("#block_exchange_dropdown").select2({
+      templateSelection: addNewSelect,
+      templateResult: addNew,
+    });
+
+    //////
+    $(".select_coin").select2({
+      templateSelection: addNewSelect,
+      templateResult: addNew,
+    });
+
+    $('.select_coin').on("select2:select", function (e) {
+      var data = e.params.data;
+      var m = data.text;
+      $('.wallet_coin .tab-pane.fade').removeClass("show active");
+      $(`#` + m).addClass("show active");
+    });
+
+
+    function addNewSelect(state) {
+      if (!state.id) {
+        return state.text;
+      }
+      var $state = $(
+        '<span class="select_span"><img class="select_ico"" src="img/select_img/' + state.text.toLowerCase() +
+        '.png" /> ' + state.text + ' </span>'
+      );
+      return $state;
+    }
+
+    function addNew(state) {
+      if (!state.id) {
+        return state.text;
+      }
+      var $state = $(
+        '<span class="select_span"><img class="select_ico"" src="img/select_img/' + state.text.toLowerCase() +
+        '.png" /> ' + state.text + ' </span>'
+      );
+      return $state;
+    }
+
+
     // script select
     var data_from = [{
         id: 0,
@@ -925,7 +1680,7 @@
       },
       {
         id: 1,
-        text: 'Etherium',
+        text: 'Ethereum',
         value: '1200',
         curency: 'ETH'
       },
@@ -1011,29 +1766,25 @@
       return $state;
     }
 
-    //////
-    $(".select_coin").select2({
-      DropdownCssClass: "test",
-      // data: data,
+
+
+    jQuery(function ($) {
+      $(document).mouseup(function (e) { // событие клика по веб-документу
+        var div = $('.navbar-collapse.mobile_nav_collapse.collapse.show, .navbar-toggler');
+        if (!div.is(e.target) // если клик был не по нашему блоку
+          &&
+          div.has(e.target).length === 0) { // и не по его дочерним элементам
+          div.removeClass('show');
+          $('.navbar-toggler.custom-toggler').attr('aria-expanded', 'false');
+        }
+      });
     });
 
-jQuery(function($){
-	$(document).mouseup(function (e){ // событие клика по веб-документу
-		var div = $('.navbar-collapse.mobile_nav_collapse.collapse.show, .navbar-toggler');
-		if (!div.is(e.target) // если клик был не по нашему блоку
-		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
-			div.removeClass('show');
-      $('.navbar-toggler.custom-toggler').attr('aria-expanded' , 'false');
-		}
-	});
-});
-
-$( document ).ready(function() {
-    $('.mainLogo').animate({
-    opacity: 0.25,
-  }, 5000, function() {
-  });
-});
+    $(document).ready(function () {
+      $('.mainLogo').animate({
+        opacity: 1,
+      }, 5000, function () {});
+    });
   </script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>

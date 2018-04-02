@@ -11,6 +11,8 @@ body
   font-size: 14px
   color: #fff
   margin-bottom: 100px
+ul
+  list-style-type: none  
 textarea
  overflow: hidden  
 textarea, input, select, span, div
@@ -55,6 +57,8 @@ header
     align-items: center
     flex-basis: 50%
     padding: 0 15px
+.mainLogo
+  opacity: 0.25    
 .mobile_nav
   background-color: #162a38
   border-left: 1px solid #304757
@@ -441,13 +445,13 @@ footer
   content: "\e902"
 
 .icon-4:before
-  content: "\e904"
+  content: "\e903"
 
 .icon-5:before
-  content: "\e905"
+  content: "\e904"
 
 .icon-6:before
-  content: "\e907"
+  content: "\e905"
 
 .icon-balans:before
   content: "\e909"
@@ -728,7 +732,7 @@ img
       border-top-right-radius: 0
       border-top: none
       margin-top: 0
-      margin-left: -123px
+      margin-left: -120px
 
 .btn_wallet
   border-radius: 3px
@@ -799,11 +803,11 @@ img
     font-weight: 700
 
 //wallet
-
+.wallet
+  padding-left: 0
 
 .wallet_coins
   padding-top: 53px
-  height: 100vh
   border-right: 1px solid #2f4758
   &_header
     h1
@@ -811,6 +815,7 @@ img
       font-weight: bold
       text-align: center
       color: #fff
+      margin-top: 10px
   &_wrap
     display: flex
 
@@ -836,9 +841,11 @@ img
       color: #2daa47
       font-weight: 700
   .add_new
-    position: absolute
-    bottom: 55px
     padding-left: 49px
+    padding-bottom: 55px
+    display: flex
+    
+    // justify-content: flex-end
     button
       font-size: 16px
       font-weight: 700
@@ -911,7 +918,7 @@ img
   li:nth-child(1)::before
      content: none
 .hidden
-  display: none !important
+  display: none 
 
 .operation_table
   display: flex
@@ -953,6 +960,8 @@ img
   &_descr
     height: 100px
     border: none
+    &.hidden
+      display: none
     &_info
       align-self: center
       margin-left: 54px
@@ -1057,21 +1066,36 @@ li.block_exchange_button
   &_youAre
     justify-content: center
     padding-top: 23px
+    &_next
+      &__left
+        text-align: right
+      .block_exchange_coin
+        width: auto   
   .form-control
     background: transparent
     border: none
     padding: 0
   &_central
+    &_top
+      flex-grow: 1
+      flex-shrink: 0
     img
       width: 30px
       height: 26px
       margin: 20px 30px
       margin-top: 75px
     &_img_second
-      margin-top: 25px !important  
+      margin-top: 25px !important
+      transform: none !important
+    &_sending
+      margin-top: 27px !important
+      &_next
+        transform: none !important
+        margin-left: 10px !important 
+        margin-right: 10px !important    
   &_coin
     flex-direction: column
-    width: 360px
+    // width: 360px
     &__left
       text-align: right
     &_p
@@ -1108,6 +1132,8 @@ li.block_exchange_button
     border: 1px solid #3a5364
     align-items: center
     &__exchange
+      margin-left: auto
+      margin-right: auto
       display: flex
       justify-content: center
       margin-bottom: 31px
@@ -1192,10 +1218,19 @@ li.block_exchange_button
   border-color: #2c9e47 !important
 
 //modal
+#addNew, #receive, #send
+  padding-right: 0 !important
+.block_exchange_dropdown
+  .select2-selection--single
+    display: flex
+  .select2
+    width: 360px !important   
+  .select2-selection__rendered 
+    display: flex 
 .modal_addNewCoin
   transform: translate(0%, 45%) !important
 .modal_sendCoin
-  transform: translate(-16%, 25%) !important
+  transform: translate(0%, 25%) !important
 .modal_receiceCoin  
   transform: translate(0%, 15%) !important
 
@@ -1319,10 +1354,12 @@ p.modal_receive_p
   margin-top: 34px
   font-size: 14px
   margin-bottom: 8px
+  
   &__cod
     color: #7a92a2
     font-size: 22px
     font-weight: 400
+    word-wrap: break-word
 .modal_receive_button
   padding: 9px 26px
   text-transform: uppercase
@@ -1353,6 +1390,7 @@ p.modal_receive_p
       flex-basis: 20%
     &__center
       flex-basis: 60%
+      word-break: break-all
       img
         padding-right: 10px
     &__right
@@ -1369,6 +1407,15 @@ p.modal_receive_p
 
   // select
 
+.block_exchange_dropdown
+  .select_span
+    margin-top: 15px
+    .select_ico
+      margin-left: 15px
+      margin-top: -3px
+      width: 40px
+      height: 40px    
+
 .select2-container--default .select2-selection--single
   background: transparent
 .select2-selection.select2-selection--single
@@ -1379,11 +1426,11 @@ p.modal_receive_p
   color: #ffffff
   font-size: 16px
   font-weight: 700
-  margin-left: 15px
+  margin-left: 0px
   text-transform: uppercase
 .select2-container--default .select2-results>.select2-results__options
   background: transparent
-  color: #577080
+  // color: #577080
 .select2-container--default .select2-selection--single .select2-selection__arrow
   top: 20px
   right: 10px
@@ -1418,7 +1465,8 @@ p.modal_receive_p
 
 .modal_send
   width: 679px
-.select_from
+  .select2
+    width: 85% !important
   // width: 85%
 .select2-search--dropdown
   display: none
@@ -1426,7 +1474,8 @@ p.modal_receive_p
   display: block
   font-size: 14px
   color: #fff
-  margin: 16px
+  margin-top: 20px
+  margin-left: 20px
   font-weight: normal !important
   text-transform: inherit
   &_value
@@ -1467,11 +1516,6 @@ p.modal_receive_p
   .select2-container--default .select2-selection--single .select2-selection__arrow
     top: 0  
       
-
-
-
-
-
 .form_error
   background: red
   color: red 
