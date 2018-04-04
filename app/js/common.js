@@ -1,4 +1,32 @@
-$('.operation_status').click(function () {
+// logo
+$(document).ready(function () {
+    $('.mainLogo').animate({
+      opacity: 1,
+    }, 5000, function () {});
+  });
+
+
+  // mobile menu
+
+  jQuery(function ($) {
+    $(document).mouseup(function (e) { // событие клика по веб-документу
+      var div = $('.navbar-collapse.mobile_nav_collapse.collapse.show, .navbar-toggler');
+      if (!div.is(e.target) // если клик был не по нашему блоку
+        &&
+        div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.removeClass('show');
+        $('.navbar-toggler.custom-toggler').attr('aria-expanded', 'false');
+      }
+    });
+  });
+
+$('.mobile_nav_collapse').click(function () {
+$(this).removeClass('show');
+$('.navbar-toggler.custom-toggler').attr('aria-expanded', 'false');
+});
+
+
+$('.operation_status_main').click(function () {
     $(this).find('.operation_status_descr').toggleClass('hidden');
 });
 
@@ -12,16 +40,16 @@ $('.block_exchange_sending_a').click(function () {
     $('.exchange_bottom').addClass('hidden');
 });
 
+// progress bar exchange
+
+$(".block_exchange_button__exchange").click(function(){
 var pct = 0,
     span_progress = document.getElementById("span_progress"),
     div_loading_progress = document.getElementById("div_loading_progress");
-
-
 function display_pct(p) {
     span_progress.innerHTML = "" + p + "%";
     div_loading_progress.className = "c100 p" + p;
 }
-
 function update_pct() {
     display_pct(pct++);
 
@@ -29,8 +57,8 @@ function update_pct() {
         setTimeout(update_pct, 50);
     }
 }
-
 setTimeout(update_pct, 100);
+});
 
 
 
@@ -46,6 +74,9 @@ $('.operations_ul').on('click', '.operations_ul_item', function(){
         $('.operation_status_main').show();
     }
 });
+
+
+// diagram
 
 $.getJSON('js/wallet.json', function (data) {
 

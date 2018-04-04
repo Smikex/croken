@@ -111,7 +111,7 @@
                 </a>
               </li>
               <li>
-                <a class="nav-link" id="v-pills-Wallet-tab" data-toggle="pill" href="#v-pills-Wallet" role="tab" aria-controls="v-pills-Wallet"
+                <a class="nav-link wallet_menu" id="v-pills-Wallet-tab" data-toggle="pill" href="#v-pills-Wallet" role="tab" aria-controls="v-pills-Wallet"
                   aria-selected="false">
                   <span>
                     <i class="icon-2"></i>Wallet</span>
@@ -184,7 +184,7 @@
               </a>
             </li>
             <li>
-              <a class="nav-link" id="v-pills-Wallet-tab" data-toggle="pill" href="#v-pills-Wallet" role="tab" aria-controls="v-pills-Wallet"
+              <a class="nav-link wallet_menu" id="v-pills-Wallet-tab" data-toggle="pill" href="#v-pills-Wallet" role="tab" aria-controls="v-pills-Wallet"
                 aria-selected="false">
                 <span>
                   <i class="icon-2"></i>Wallet</span>
@@ -416,10 +416,17 @@
                     </ul>
                   </div>
 
+                  <!-- oparation status -->
+
                   <div class="wallets_coins_main">
                     <div class="wallets_coins_content">
                       <div class="operation_table">
-                        <div class="operation_status  operation_status_main" data-status="received">
+
+                        <!-- oparation -->
+
+
+                        <div class="operation_status_main" data-status="received">
+                          <div class="operation_status operation_status_main__firstLine">
                           <div class="operation_status operation_status_leftBlock">
                             <div class="operation_status_wrap_img">
                               <img class="operation_status_img" src="img/received.png" alt="">
@@ -441,6 +448,7 @@
                           <div class="operation_status operation_status_rightBlock">
                             <span class="operation_status_time">2 hours ago</span>
                           </div>
+                        </div>
                           <div class="operation_status operation_status_descr hidden">
                             <div class="operation_status_descr_info">
                               <p>Date:
@@ -455,41 +463,43 @@
                           </div>
                         </div>
 
-                        <div class="operation_status operation_status_main" data-status="received">
-                          <div class="operation_status operation_status_leftBlock">
-                            <div class="operation_status_wrap_img">
-                              <img class="operation_status_img" src="img/received.png" alt="">
+                        <div class="operation_status_main" data-status="received">
+                            <div class="operation_status operation_status_main__firstLine">
+                            <div class="operation_status operation_status_leftBlock">
+                              <div class="operation_status_wrap_img">
+                                <img class="operation_status_img" src="img/received.png" alt="">
+                              </div>
+                              <div class="operation_status_exchange operation_status_exchange_left ">
+                                <span class="operation_status_exchange__span">Received</span>
+                              </div>
+                              <div class="operation_status_exchange">
+                                <p class="operation_status_exchange__p"> 0.30080 ETH —
+                                  <span class="operation_status_exchange__p__span">
+                                    $8.30600</span>
+                                </p>
+                              </div>
                             </div>
-                            <div class="operation_status_exchange operation_status_exchange_left ">
-                              <span class="operation_status_exchange__span">Received</span>
-                            </div>
-                            <div class="operation_status_exchange">
-                              <p class="operation_status_exchange__p"> 0.30080 ETH —
-                                <span class="operation_status_exchange__p__span">
-                                  $8.30600</span>
+                            <div class="operation_status operation_status_centralBlock">
+                              <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
                               </p>
                             </div>
-                          </div>
-                          <div class="operation_status operation_status_centralBlock">
-                            <p class="operation_status_from">from: 0x3f5CE5FBFe3E9af3971dD833D26bA9b
-                            </p>
-                          </div>
-                          <div class="operation_status operation_status_rightBlock">
-                            <span class="operation_status_time">2 hours ago</span>
-                          </div>
-                          <div class="operation_status operation_status_descr hidden">
-                            <div class="operation_status_descr_info">
-                              <p>Date:
-                                <span>Sunday, August 28th 2018, 20:23 PM</span>
-                              </p>
-                            </div>
-                            <div class="operation_status_descr_info">
-                              <p>Transaction ID:
-                                <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
-                              </p>
+                            <div class="operation_status operation_status_rightBlock">
+                              <span class="operation_status_time">2 hours ago</span>
                             </div>
                           </div>
-                        </div>
+                            <div class="operation_status operation_status_descr hidden">
+                              <div class="operation_status_descr_info">
+                                <p>Date:
+                                  <span>Sunday, August 28th 2018, 20:23 PM</span>
+                                </p>
+                              </div>
+                              <div class="operation_status_descr_info">
+                                <p>Transaction ID:
+                                  <span>BFe3E9af3971dD833D26bA9b5C936f0b</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
 
                       </div>
                     </div>
@@ -1765,26 +1775,6 @@
       );
       return $state;
     }
-
-
-
-    jQuery(function ($) {
-      $(document).mouseup(function (e) { // событие клика по веб-документу
-        var div = $('.navbar-collapse.mobile_nav_collapse.collapse.show, .navbar-toggler');
-        if (!div.is(e.target) // если клик был не по нашему блоку
-          &&
-          div.has(e.target).length === 0) { // и не по его дочерним элементам
-          div.removeClass('show');
-          $('.navbar-toggler.custom-toggler').attr('aria-expanded', 'false');
-        }
-      });
-    });
-
-    $(document).ready(function () {
-      $('.mainLogo').animate({
-        opacity: 1,
-      }, 5000, function () {});
-    });
   </script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
