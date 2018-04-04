@@ -557,8 +557,8 @@ img
 .nav-pills .nav-link.active, .nav-pills .nav-item.show.nav-link
   background-color: #233644 !important
 
-// #v-pills-Wallet
-  // display: flex
+#v-pills-Wallet, #v-pills-tabContent
+  width: 100%
 // #v-pills-tabContent
 //   flex-direction: column  
 
@@ -835,6 +835,7 @@ img
       margin-top: 10px
   &_wrap
     display: flex
+    width: 100%
 
   a
     color: #fff
@@ -858,11 +859,10 @@ img
       color: #2daa47
       font-weight: 700
   .add_new
-    padding-left: 49px
-    padding-bottom: 55px
     display: flex
-    
-    // justify-content: flex-end
+    position: fixed
+    bottom: 50px
+    align-self: center
     button
       font-size: 16px
       font-weight: 700
