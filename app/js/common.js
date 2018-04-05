@@ -322,3 +322,13 @@ $.fn.extend({
   });
   
   })(jQuery);
+
+
+// tabs
+  $('.wallet_menu').click(function () {
+    $('.view-section, #v-pills-tabContent, #v-pills-Wallet').addClass('d-flex');
+  });
+
+  $('.nav-link:not(.wallet_menu)').click(function () {
+    $('.view-section, #v-pills-tabContent, #v-pills-Wallet').removeClass('d-flex');
+  });
