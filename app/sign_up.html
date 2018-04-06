@@ -112,14 +112,11 @@ $(function(){
 	});
 	
 });
-// слабый пароль
 pass1.complexify({minimumChars:6, strengthScaleFactor:0.1}, function(valid, complexity){
 		if(valid){
       $('#pass_diff').text('Pass week').css({'color': 'red'});
       $("#diff_1").addClass('line_red');
       $("#diff_1, #diff_2").removeClass('line_yellow');
-
-        console.log("easy");
      
 	}
 	else{
@@ -127,27 +124,21 @@ pass1.complexify({minimumChars:6, strengthScaleFactor:0.1}, function(valid, comp
 	}
 
 });
-// средний пароль
 pass1.complexify({minimumChars:6, strengthScaleFactor:1}, function(valid, complexity){
 		if(valid){
       $('#pass_diff').text('Pass normal').css({'color': 'yellow'});
       $("#diff_1, #diff_2").addClass('line_yellow');
       $("#diff_3, #diff_1, #diff_2").removeClass('line_green');
-
-      console.log("middle");
-
-
 	}
 	else{
     // $("#diff_2, #diff_3").removeClass('line_red, line_green')
 	}
 });
-// сильный пароль
+
 pass1.complexify({strengthScaleFactor:3}, function(valid, complexity){
 		if(valid){
       $('#pass_diff').text('Pass strong').css({'color': 'green'});
       $("#diff_1, #diff_2, #diff_3").addClass('line_green');
-      console.log("hard");
 	}
 	else{
 	}
