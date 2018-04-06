@@ -144,7 +144,6 @@
     display: none
   .login_confirm
     max-width: 520px
-    margin-top: -100px
   .view-section
     width: 100%
   .coin
@@ -346,16 +345,22 @@
     padding: 10px
   .operations_button
     margin: 10px 5px   
-  .operation_status_img
-    width: 9px
-    height: 12px
-    margin: 0 3px
+  .operation_status
+    &_img
+      width: 9px
+      height: 12px
+      margin: 0 5px
+      margin-bottom: 4px
+    &_time
+      padding-top: 10px  
   .operation_status_main
-    padding: 20px 10px  
+    padding: 0 10px  
   .operation_status_rightBlock
     order: 0
   .operation_status_exchange
     order: 1
+    &__p
+      margin-left: 10px
   .operation_status_exchange__span
     margin-right: 0    
   .operation_status_exchange_left
@@ -366,6 +371,8 @@
     margin-left: 0
   .operation_status_rightBlock
     flex-basis: 50%
+  .operation_status_leftBlock
+    padding-bottom: 10px
   .operation_status_descr_info
     margin-left: 0
   .exchange
