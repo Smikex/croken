@@ -848,15 +848,17 @@ img
     display: flex
     flex-direction: column
     width: 206px
-    padding-left: 49px
   li
     font-size: 16px
     font-weight: 400
     color: #fff
-    padding: 15px 0
     &:hover
       color: #2daa47
       font-weight: 700
+    a
+      padding: 15px 0  15px 49px
+      display: block
+
   .add_new
     display: flex
     position: fixed
@@ -1292,8 +1294,12 @@ li.block_exchange_button
     display: flex 
 .modal_addNewCoin
   transform: translate(0%, 45%) !important
+  .close
+    margin-top: 0
+    margin-bottom: 0
+
 .modal_sendCoin
-  transform: translate(0%, 25%) !important
+  transform: translate(-10%, 10%) !important
 .modal_receiceCoin  
   transform: translate(0%, 15%) !important
 
@@ -1348,7 +1354,7 @@ li.block_exchange_button
   font-size: 16px !important
   font-weight: 400 !important
   line-height: 34px
-  margin: 12px
+  margin: 20px
 
 #send
   .modal-header_button
@@ -1358,7 +1364,7 @@ li.block_exchange_button
     color: #fff !important
     background: transparent
     border: none
-    text-align: center
+    text-align: center  
     &:placeholder
       font-size: 16px
       font-weight: 400
@@ -1372,12 +1378,58 @@ li.block_exchange_button
     border-radius: 10px
     border: 1px solid #3a5364
     text-align: center
-    padding: 15px
+    padding: 9px 15px
+    &_add
+      padding: 13px 15px 
     &_bottom
       border: 2px solid #fff
 .input-group-prepend_img
   margin-left: 7px
   margin-right: 20px
+.input-group-prepend__img
+  margin-left: 20px
+  margin-top: -3px
+#send
+  .form-control.input__amount
+
+    &_number
+      font-size: 23px
+      font-weight: bold
+      &[placeholder]
+        font-size: 23px
+        font-weight: bold
+        color: #ffffff !important
+      &::placeholder
+        color: #ffffff !important
+        opacity: 1          
+      &::-moz-placeholder
+        color: #ffffff !important
+        opacity: 1          
+      &::-webkit-input-placeholder
+        color: #ffffff !important
+        opacity: 1
+.commisionWrap
+  width: 100%
+  display: flex
+  justify-content: center
+  .select2-selection__rendered
+    padding-left: 30px !important
+    font-size: 14px !important
+    font-weight: 400 !important
+    margin-top: 18px   
+    text-transform: none !important
+.select2-results__option
+  padding: 10px  20px !important  
+.input__amount
+  margin-bottom: 20px
+  border: 2px solid #fff !important
+  &_span
+  display: flex
+  align-self: center
+  font-size: 16px
+  align-items: center
+  font-weight: bold
+  color: #ffffff !important           
 .modal_send_p__bottom
   font-size: 16px  !important
   margin-top: 20px !important
@@ -1472,6 +1524,20 @@ p.modal_receive_p
       justify-content: space-between
 
   // select
+.select2-selection__arrow b
+  display: none    
+.select2-selection__arrow:before
+  background: url('../img/arr.png') no-repeat
+  content: ''
+  width: 30px
+  height: 30px
+  position: absolute
+  margin-top: 10px
+.select2-container--open
+  .select2-selection__arrow:before
+    transform: rotate(180deg)
+    margin-top: -12px
+    left: -15px 
 
 .block_exchange_dropdown
   .select_span
@@ -1528,9 +1594,12 @@ p.modal_receive_p
 .selected_span
   font-size: 16px
   display: block
-
+.close
+  margin-top: -30px
+  margin-bottom: 30px
 .modal_send
   width: 679px
+
   .select2
     width: 85% !important
   // width: 85%

@@ -1847,14 +1847,29 @@
             </button>
             <h2 class="modal-title" id="send">Send Ethereum, ETH</h2>
             <p class="modal_send_p">Send to</p>
-            <div class="input-group">
+            <div class="input-group input-group_add">
               <div class="input-group-prepend">
                 <!-- <img src="img/qr_small.png" alt=""> -->
               </div>
-              <input type="text" class="form-control" placeholder="Ethereum Address" aria-label="Username" aria-describedby="basic-addon1">
+              <input type="text" class="form-control " placeholder="Ethereum Address" aria-label="Username" aria-describedby="basic-addon1">
             </div>
             <p class="modal_send_span">from</p>
             <div class="select_from"></div>
+            <p class="modal_send_span">Amount</p>
+            <div class="input-group input__amount">
+              <div class="input-group-prepend">
+              <img class="input-group-prepend__img" src="img/Forma1.png" alt="">
+          </div>
+          <input type="number" class="form-control input__amount_number" placeholder="6.30080" aria-label="Username" aria-describedby="basic-addon1">
+          <span class="input__amount_span">ETH</span>
+        </div>
+<div  class="commisionWrap">
+        <select class="select_commision">
+          <option value="">Commission Include 0.5% (Fast Exchange)</option>
+          <option value="">Commission Include 1%</option>
+          <option value="">Commission Include 2%</option>
+        </select>
+      </div>
             <p class="modal_send_p__bottom">You are sending
               <span>6.30080 ETH —</span>
               <span>$8.300030</span>
@@ -2035,7 +2050,26 @@
       templateResult: formatStateFrom,
       templateSelection: formatSelectFrom
     });
+    ////
+    // var data_commision = [{
+    //     id: 0,
+    //     text: 'Bitcoin',
+    //   },
+    //   {
+    //     id: 1,
+    //     text: 'Ethereum',
 
+    //   },
+    //   {
+    //     id: 2,
+    //     text: 'Bitcoin cash',
+
+    //   },
+
+    // ];
+    $(".select_commision").select2({
+      // data: data_commision
+    });
 
 
     ////
