@@ -12,139 +12,156 @@
 </head>
 
 <body>
-<header>
-    <a href="index.html"><img src="img/Logo.png" alt=""></a>
-</header>
-
-<div class="container sign_up sign_up__first">
-    <ul id="myTab">
-        <li class="active">
-            <img src="img/1.svg" alt=""><p>Sign Up for a Croken Account</p>
-        </li>
-        <li>
-            <img src="img/2.svg" alt=""><p>Email </br>Confirmation</p>
-        </li>
-        <li>
-            <img src="img/3.svg" alt=""><p>IP binding and Google Authentication</p>
-        </li>
-    </ul>
-
-<div id="myTabContent">
-<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-    <div class="sign_up_account">
-    <h1>Sign Up for a Croken Account</h1>
-      <form id="sign_form" method="get" action="sign_up_auth.html" onsubmit="return checkPassword(this);">
-        <div class="form-group">
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/Logo.png" alt="">
+            </a>
         </div>
-        <span id="email_incorect" ></span>
-        <div class="form-group">
-          <input type="password" class="form-control" id="password1" name="password1" placeholder="Password">
-          <span id="pass_diff"></span>
-          <div class="lines" id="pass_dificult">
-            <div class="line" id="diff_1"></div>
-            <div class="line" id="diff_2"></div>
-            <div class="line" id="diff_3"></div>
-          </div>
-          <p>It would take about 5 days to crack this password</p>
-          <input type="password" class="form-control" id="password2" name="password2" placeholder="Confirm Password">
-          <span id="pass_incorect"></span>
-          <p>By registering you agree to Croken's</p>
-          <p>Terms of Use & Pricing</p>
+    </header>
+
+    <div class="container sign_up sign_up__first">
+        <ul id="myTab">
+            <li class="active">
+                <img src="img/1.svg" alt="">
+                <p>Sign Up for a Croken Account</p>
+            </li>
+            <li>
+                <img src="img/2.svg" alt="">
+                <p>Email </br>Confirmation</p>
+            </li>
+            <li>
+                <img src="img/3.svg" alt="">
+                <p>IP binding and Google Authentication</p>
+            </li>
+        </ul>
+
+        <div id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="sign_up_account">
+                    <h1>Sign Up for a Croken Account</h1>
+                    <form id="sign_form" method="get" action="sign_up_auth.html" onsubmit="return checkPassword(this);">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <span id="email_incorect"></span>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password1" name="password1" placeholder="Password">
+                            <span id="pass_diff"></span>
+                            <div class="lines" id="pass_dificult">
+                                <div class="line" id="diff_1"></div>
+                                <div class="line" id="diff_2"></div>
+                                <div class="line" id="diff_3"></div>
+                            </div>
+                            <p>It would take about 5 days to crack this password</p>
+                            <input type="password" class="form-control" id="password2" name="password2" placeholder="Confirm Password">
+                            <span id="pass_incorect"></span>
+                            <p>By registering you agree to Croken's</p>
+                            <p>Terms of Use & Pricing</p>
+                        </div>
+                        <button id="signUp" class="btn mt-0">Sign Up</button>
+                    </form>
+                    <p>Already have an account?
+                        <a href="index.html">Log In</a>
+                    </p>
+                </div>
+            </div>
+
         </div>
-        <button id="signUp"  class="btn mt-0">Sign Up</button>
-      </form>
-      <p>Already have an account? <a href="index.html">Log In</a></p>
     </div>
-</div>
 
-</div>
-</div>
-
-<footer class="footer">
-    <div class="container">
-        <p>2018 © Croken</p>
-        <p><span>All Rights Reserved</span></p>
-    </div>
-</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <footer class="footer">
+        <div class="container">
+            <p>2018 © Croken</p>
+            <p>
+                <span>All Rights Reserved</span>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<script src="js/libs.min.js"></script>
-<script>
-// email pass check
-var pass1 = $('#password1'),
-		pass2 = $('#password2'),
-		email = $('#email'),
-		form = $('#sign_form'),
-    arrow = $('#pass_dificult');
-    
-$(function(){
-	// Опустошаем поле при загрузке
-	$('#sign_form input').val('');
-	
-	// Проверка адреса e-mail
-	email.on('blur',function(){
-		
-		// очень простая процедура проверки
-		if (!/^\S+@\S+\.\S+$/.test(email.val())){
-      $('#email_incorect').text("Wrong Email");
-		}
-		else{
-      $('#email_incorect').text("");
-		}
-		
-	});
-	
-	// Проверяем второе поле ввода пароля
-	pass2.on('blur',function(){
-		
-		// Нужно убедиться, что эначения первого и второго полей ввода пароля одинаковы
-		if(pass2.val() == pass1.val()){
-     
-		}
-		else{
-      $('#pass_incorect').text("Password does not match");
-		} 
-	});
-	
-});
-pass1.complexify({minimumChars:6, strengthScaleFactor:0.1}, function(valid, complexity){
-		if(valid){
-      $('#pass_diff').text('Pass week').css({'color': 'red'});
-      $("#diff_1").addClass('line_red');
-      $("#diff_1, #diff_2").removeClass('line_yellow');
-     
-	}
-	else{
+    <script src="js/libs.min.js"></script>
+    <script>
+        // email pass check
+        var pass1 = $('#password1'),
+            pass2 = $('#password2'),
+            email = $('#email'),
+            form = $('#sign_form'),
+            arrow = $('#pass_dificult');
 
-	}
+        $(function () {
+            // Опустошаем поле при загрузке
+            $('#sign_form input').val('');
 
-});
-pass1.complexify({minimumChars:6, strengthScaleFactor:1}, function(valid, complexity){
-		if(valid){
-      $('#pass_diff').text('Pass normal').css({'color': 'yellow'});
-      $("#diff_1, #diff_2").addClass('line_yellow');
-      $("#diff_3, #diff_1, #diff_2").removeClass('line_green');
-	}
-	else{
-    // $("#diff_2, #diff_3").removeClass('line_red, line_green')
-	}
-});
+            // Проверка адреса e-mail
+            email.on('blur', function () {
 
-pass1.complexify({strengthScaleFactor:3}, function(valid, complexity){
-		if(valid){
-      $('#pass_diff').text('Pass strong').css({'color': 'green'});
-      $("#diff_1, #diff_2, #diff_3").addClass('line_green');
-	}
-	else{
-	}
+                // очень простая процедура проверки
+                if (!/^\S+@\S+\.\S+$/.test(email.val())) {
+                    $('#email_incorect').text("Wrong Email");
+                } else {
+                    $('#email_incorect').text("");
+                }
 
-});
-</script>
+            });
+
+            // Проверяем второе поле ввода пароля
+            pass2.on('blur', function () {
+
+                // Нужно убедиться, что эначения первого и второго полей ввода пароля одинаковы
+                if (pass2.val() == pass1.val()) {
+
+                } else {
+                    $('#pass_incorect').text("Password does not match");
+                }
+            });
+
+        });
+        pass1.complexify({
+            minimumChars: 6,
+            strengthScaleFactor: 0.1
+        }, function (valid, complexity) {
+            if (valid) {
+                $('#pass_diff').text('Pass week').css({
+                    'color': 'red'
+                });
+                $("#diff_1").addClass('line_red');
+                $("#diff_1, #diff_2").removeClass('line_yellow');
+
+            } else {
+
+            }
+
+        });
+        pass1.complexify({
+            minimumChars: 6,
+            strengthScaleFactor: 1
+        }, function (valid, complexity) {
+            if (valid) {
+                $('#pass_diff').text('Pass normal').css({
+                    'color': 'yellow'
+                });
+                $("#diff_1, #diff_2").addClass('line_yellow');
+                $("#diff_3, #diff_1, #diff_2").removeClass('line_green');
+            } else {
+                // $("#diff_2, #diff_3").removeClass('line_red, line_green')
+            }
+        });
+
+        pass1.complexify({
+            strengthScaleFactor: 3
+        }, function (valid, complexity) {
+            if (valid) {
+                $('#pass_diff').text('Pass strong').css({
+                    'color': 'green'
+                });
+                $("#diff_1, #diff_2, #diff_3").addClass('line_green');
+            } else {}
+
+        });
+    </script>
 
 </body>
 

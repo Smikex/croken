@@ -46,7 +46,7 @@ a:focus, a:hover, button:hover, button:focus
   outline: none
 
 header
-  a
+  .logo
     display: flex
     justify-content: center
     padding-top: 28px
@@ -497,7 +497,7 @@ img
   background: #233644
   .tab-content
     flex-direction: column
-    height: 100%
+    // height: 100%
 
   /*** .sidebar ***/
 .sidebar
@@ -1654,7 +1654,7 @@ p.modal_receive_p
 .form_error
   background: red
   color: red 
-#email_incorect, #pass_incorect
+#email_incorect, #pass_incorect, .enterPass, .enterEmail
   display: block
   color: red
   text-align: center  
@@ -1663,6 +1663,13 @@ p.modal_receive_p
   font-weight: 400
 #pass_incorect
   padding-top: 20px
+.enterPass
+  padding-top: 20px
+  margin-bottom: -20px
+.enterEmail
+  padding-top: 20px  
+.forgot_password .enterEmail
+  margin-bottom: -30px
 #pass_diff
   display: block
   text-align: center  
@@ -1673,7 +1680,7 @@ p.modal_receive_p
   .form-group
     margin-bottom: 0  
 .test
-  background-color: red    
+  background-color: red  
 
 @import "media.sass"
 @import "round.css"
