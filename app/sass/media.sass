@@ -6,6 +6,8 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width : 769px)
+  .addNew
+    padding-top: 25vh
   .wallet_coins
     // min-height: 100vh
     padding-top: 20vh
@@ -86,6 +88,10 @@
 @media (max-width : 991.98px)
   /**/  
 @media (max-width : 768px)
+  .modal_sendCoin
+    transform: translate(0%, 10%) !important
+  .addNew
+    padding-top: 10vh
   .highcharts-tooltip
     display: none
   .block_exchange_central
@@ -129,7 +135,7 @@
     flex-basis: 20%
   .wallet_coins
     padding-top: 0
-    height: 60px
+    height: 60px !important
     display: flex
     flex-wrap: wrap
     align-items: center
@@ -323,13 +329,13 @@
     flex-basis: 100%
   .add_new
     flex-basis: 35%
-    border: 1px solid #304757
+    // border: 1px solid #304757
     height: 62px
     border-right: none
                                                   
   .wallet_coins
     border-bottom: none
-    height: 200px
+    height: 200px !important
     &_header
       flex-basis: 100%
       h1

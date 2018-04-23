@@ -516,10 +516,10 @@
                   <div class="operations">
                     <img class="operations_img" src="img/Ethereum.png" alt="">
                     <h1 class="operations_h1">Ethereum, ETH</h1>
-                    <div class="add_new">
+                    <!-- <div class="add_new"> -->
                       <button class="addNew__button" data-toggle="modal" data-target="#addNew">
                         <img class="addNew__img" src="img/plus.png" alt=""> ADD COIN</button>
-                    </div>
+                    <!-- </div> -->
                   </div>
                 </div>
 
@@ -1963,7 +1963,12 @@
   <script>
 
 // height block wallet
-
+if($(window).width() > 768) {
+  $(function() {
+    var height = $( '.sidebar-wrapper' ).height(); 
+    $( '.wallet_coins' ).height(height); 
+});
+}
 $(function() {
     var height = $( '.sidebar-wrapper' ).height(); 
     $( '.wallet_coins' ).height(height); 
