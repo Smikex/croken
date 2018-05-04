@@ -25,10 +25,12 @@ $(this).removeClass('show');
 $('.navbar-toggler.custom-toggler').attr('aria-expanded', 'false');
 });
 
+// click wallet hover
 
 $('.operation_status_main').click(function () {
     $(this).find('.operation_status_descr').toggleClass('hidden');
-});
+    $(this).toggleClass('hover_operation');
+});    
 
 $('.block_exchange_button__exchange').click(function () {
     $('.exchange_bottom').removeClass('hidden');

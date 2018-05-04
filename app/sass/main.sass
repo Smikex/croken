@@ -14,11 +14,14 @@ body
 ul
   list-style-type: none 
 li
-  cursor: pointer   
+  cursor: pointer
+button
+  outline: none     
 textarea
  overflow: hidden  
 textarea, input, select, span, div
   resize: none
+
   &:focus,
   &:active
     outline: none
@@ -997,11 +1000,10 @@ img
     display: flex
     flex-direction: column
     &:hover
-      background-color: #162a38
+    
     &__firstLine
       padding-top: 20px
       padding-bottom: 20px
-
   &_leftBlock
     flex-basis: 40%
     border: none
@@ -1033,6 +1035,9 @@ img
       span
         display: block
         color: #fff
+.hover_operation
+    background-color: #162a38
+
 
 .operation_status_img
   width: 20px
@@ -1681,6 +1686,157 @@ p.modal_receive_p
     margin-bottom: 0  
 .test
   background-color: red  
+
+// backend fixes
+
+.tab-content > .active 
+  display: block
+  height: 100%
+
+// help
+
+.tab
+  &Header
+    text-align: center
+    font-size: 50px
+    font-weight: 100
+    color: #fff
+    font-family: "Proxima Nova"
+    padding-top: 70px
+    padding-bottom: 27px
+    @media (max-width : 395.98px)
+      padding: 40px 0 15px
+      font-size: 35px
+  &Descr
+    display: flex
+    margin: auto
+    text-align: center
+    max-width: 683px
+    color: #ffffff
+    font-size: 16px
+    font-weight: 400  
+    margin-bottom: 30px
+    @media (max-width : 395.98px)
+      font-size: 14px
+      padding: 0 30px
+.help
+  &Block
+    &__text
+      text-align: center 
+      font-size: 14px
+      font-weight: 400 
+      color: #fff
+      padding: 42px 0 22px 0
+  &Accordion
+    display: flex
+    flex-direction: column
+    max-width: 80%
+    margin: auto
+    &__header
+      text-align: left
+      opacity: 1 !important
+      display: flex
+      font-family: "Proxima Nova"
+      font-size: 25px
+      font-weight: 400
+      color: #2a9644 !important
+      text-decoration: none
+      border-bottom: none
+      background: transparent
+      border: none
+      @media (max-width : 1200px)
+        font-size: 22px        
+      @media (max-width : 395.98px)
+        font-size: 16px
+        font-weight: 400
+      &:hover
+        // border-bottom: none
+        text-decoration: none
+      span
+        &:before
+          content: ' '
+          width: 12px
+          height: 7px
+          background-image: url("../img/up.png") 
+          position: absolute
+          margin-top: 15px
+          margin-left: 66%
+          @media (max-width : 768px)
+            margin-left: 75%
+   
+    &__header.collapsed
+      color: #ffffff !important
+      &:hover
+        color: #ffffff !important
+        opacity: 1 !important
+      span
+        &:before
+          background-image: url("../img/down.png") 
+    &__descr
+      color: #ffffff
+      font-size: 16px
+      font-weight: 400
+      padding: 20px 0 0 0
+      @media (max-width : 1200px)
+        font-size: 14px
+      @media (max-width : 395.98px)
+        font-size: 13px 
+    &__wrap 
+      padding: 30px 0   
+      border-top: 1px dotted #4c5b66
+      @media (max-width : 395.98px)
+        padding: 16px 0
+    &__wrap:last-child
+      border-bottom: 1px dotted #4c5b66
+ 
+.contactUs 
+  justify-content: center
+  align-self: center
+  display: flex
+  width: 275px
+  line-height: 55px
+  border-radius: 5px
+  background-color: #2daa47
+  margin: auto  
+  font-size: 16px
+  text-align: center
+  text-transform: uppercase
+  align-self: center
+  margin-bottom: 80px
+.contactModal
+  .modal-dialog
+    max-width: 420px
+  &__header
+    color: #ffffff
+    font-size: 25px
+    font-weight: 100
+    text-align: center
+  &__label
+    color: #ffffff
+    font-size: 16px
+    font-weight: 100
+    padding: 22px 0 14px 0
+  &__form
+    display: flex
+    flex-direction: column
+    width: 80%
+  &__input
+    background: transparent
+    border-radius: 3px
+    border: 1px solid #586671
+    color: #fff
+    height: 52px
+    font-size: 16px  
+    padding-left: 15px
+    &_area
+      height: 220px
+      padding-top: 10px
+  &__close
+    margin-top: -5px
+    margin-bottom: 10px    
+
+
+         
 
 @import "media.sass"
 @import "round.css"
