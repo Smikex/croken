@@ -32,8 +32,9 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
-		'node_modules/jquery/dist/jquery.min.js',
-
+		// 'node_modules/jquery/dist/jquery.min.js',
+		'app/libs/tether/dist/js/tether.min.js',
+		'app/libs/bootstrap/dist/js/bootstrap.min.js',
 		'app/js/common.js'
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
@@ -47,7 +48,6 @@ gulp.task('css-libs', ['sass'], function() {
 		.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
 		.pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
-
 gulp.task('normal-fileinclude', function() {
   gulp.src(['app/*.html'])
     .pipe(fileinclude({

@@ -1802,14 +1802,177 @@
         </div>
         <div class="tab-pane fade" id="v-pills-Backup" role="tabpanel" aria-labelledby="v-pills-Backup-tab">Backup
         </div>
+
+        <!-- Settings Block -->
+
         <div class="tab-pane fade" id="v-pills-Settings" role="tabpanel" aria-labelledby="v-pills-Settings-tab">
-          Settings
+          <div class="tabSettings__wrap">
+            <h2 class="tabHeader tabHeader_settings">Settings</h2>
+            <div class="tabSettings__block tabSettings__block_left">
+              <div class="tabSettings__header">Account Information</div>
+              <form class="contactModal__form tabSettings__Form" action="">
+                <div class="contactModal__label tabSettings__label">Email:</div>
+                <input class="contactModal__input tabSettings__email" type="text" placeholder="alexey.demyanenko.work@gmail.com" disabled>
+                <div class="contactModal__label tabSettings__label">Password:</div>
+                <input type="password" class="contactModal__input tabSettings__password">
+                <div class="contactModal__label tabSettings__label">Confirm password:</div>
+                <input type="password" class="contactModal__input tabSettings__password">
+                <div class="tabSettings__formText">
+                  <div class="tabSettings__formText1">Two Factor Authentication</div>
+                  <div class="tabSettings__status tabSettings__status_Deactivated">Deactivated</div>
+                  <!-- status hidden  remove d-none-->
+                  <div class="tabSettings__status tabSettings__status_Аctivated d-none">Аctivated</div>
+                </div>
+                <div class="tabSettings__formText2">Two-factor authentication is an extra layer of security for your Apple ID designed to ensure that you're
+                  the only person who can access your account, even if someone knows your password.</div>
+
+
+              </form>
+              <button type="submit" class="tabSettings__activate" data-toggle="modal" data-target="#Authenticator">Аctivate</button>
+            </div>
+            <div class="tabSettings__block tabSettings__block_right">
+              <div class="tabSettings__header">Wallet Information</div>
+              <div class="contactModal__label">Your Wallets:</div>
+
+              <div class="SettingsAccordion__wrap" id="accordionSettings">
+
+                <!-- Wallet Item  -->
+                <div class="SettingsAccordion__block">
+                  <div class="SettingsAccordion__cover" id="headingBitcoin">
+                    <button class="SettingsAccordion__header " data-toggle="collapse" data-target="#collapseBitcoin" aria-expanded="true" aria-controls="collapseBitcoin">
+                      <img class="SettingsAccordion__img" src="img/select_img/bitcoin.png" alt="">
+                      <div class="SettingsAccordion__name">Bitcoin,
+                        <span class="SettingsAccordion__value">2</span>
+                        <span class="SettingsAccordion__control"></span>
+                      </div>
+                      <span class="SettingsAccordion__control"></span>
+                    </button>
+                  </div>
+                  <div id="collapseBitcoin" class="collapse show" aria-labelledby="headingBitcoin" data-parent="#accordionSettings">
+                    <div class="SettingsAccordion__details">
+                      <div class="SettingsAccordion__button">Main BTC</div>
+                      <div class="SettingsAccordion__qr">0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0b</div>
+                    </div>
+                    <div class="SettingsAccordion__details">
+                      <div class="SettingsAccordion__button">Binary</div>
+                      <div class="SettingsAccordion__qr">0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0b</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Wallet Item  -->
+                <div class="SettingsAccordion__block">
+                  <div class="SettingsAccordion__cover" id="headingEthereum">
+                    <button class="SettingsAccordion__header collapsed" data-toggle="collapse" data-target="#collapseEthereum" aria-expanded="false"
+                      aria-controls="collapseEthereum">
+                      <img class="SettingsAccordion__img" src="img/select_img/Ethereum.png" alt="">
+                      <div class="SettingsAccordion__name">Ethereum,
+                        <span class="SettingsAccordion__value">3</span>
+                        <span class="SettingsAccordion__control"></span>
+                      </div>
+
+                  </div>
+                  <div id="collapseEthereum" class="collapse" aria-labelledby="headingEthereum" data-parent="#accordionSettings">
+                    <div class="SettingsAccordion__details">
+                      <div class="SettingsAccordion__button">Main ETH</div>
+                      <div class="SettingsAccordion__qr">0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0b</div>
+                    </div>
+                    <div class="SettingsAccordion__details">
+                      <div class="SettingsAccordion__button">Binary</div>
+                      <div class="SettingsAccordion__qr">0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0b</div>
+                    </div>
+                    <div class="SettingsAccordion__details">
+                      <div class="SettingsAccordion__button">Donate</div>
+                      <div class="SettingsAccordion__qr">0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0b</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Wallet Item  -->
+                <div class="SettingsAccordion__block">
+                  <div class="SettingsAccordion__cover" id="headingBitcoin_Cash">
+                    <button class="SettingsAccordion__header collapsed" data-toggle="collapse" data-target="#collapseBitcoin_Cash" aria-expanded="false"
+                      aria-controls="collapseBitcoin_Cash">
+                      <img class="SettingsAccordion__img" src="img/select_img/Bitcoin Cash.png" alt="">
+                      <div class="SettingsAccordion__name">Bitcoin Cash,
+                        <span class="SettingsAccordion__value">2</span>
+                        <span class="SettingsAccordion__control"></span>
+                      </div>
+
+                  </div>
+                  <div id="collapseBitcoin_Cash" class="collapse" aria-labelledby="headingBitcoin_Cash" data-parent="#accordionSettings">
+                    <div class="SettingsAccordion__details">
+                      <div class="SettingsAccordion__button">Main ETH</div>
+                      <div class="SettingsAccordion__qr">0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0b</div>
+                    </div>
+                    <div class="SettingsAccordion__details">
+                      <div class="SettingsAccordion__button">Binary</div>
+                      <div class="SettingsAccordion__qr">0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0b</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Wallet Item  -->
+                <div class="SettingsAccordion__block">
+                  <div class="SettingsAccordion__cover" id="headingSynereo">
+                    <button class="SettingsAccordion__header collapsed" data-toggle="collapse" data-target="#collapseSynereo" aria-expanded="false"
+                      aria-controls="collapseSynereo">
+                      <img class="SettingsAccordion__img" src="img/select_img/Synereo.png" alt="">
+                      <div class="SettingsAccordion__name">Synereo,
+                        <span class="SettingsAccordion__value">2</span>
+                        <span class="SettingsAccordion__control"></span>
+                      </div>
+
+                  </div>
+                  <div id="collapseSynereo" class="collapse" aria-labelledby="headingSynereo" data-parent="#accordionSettings">
+                    <div class="SettingsAccordion__details">
+                      <div class="SettingsAccordion__button">Main ETH</div>
+                      <div class="SettingsAccordion__qr">0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0b</div>
+                    </div>
+                    <div class="SettingsAccordion__details">
+                      <div class="SettingsAccordion__button">Binary</div>
+                      <div class="SettingsAccordion__qr">0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0b</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Wallet Item  -->
+                <div class="SettingsAccordion__block">
+                  <div class="SettingsAccordion__cover" id="headingBinance">
+                    <button class="SettingsAccordion__header collapsed" data-toggle="collapse" data-target="#collapseBinance" aria-expanded="false"
+                      aria-controls="collapseBinance">
+                      <img class="SettingsAccordion__img" src="img/select_img/Binance.png" alt="">
+                      <div class="SettingsAccordion__name">Binance,
+                        <span class="SettingsAccordion__value">2</span>
+                        <span class="SettingsAccordion__control"></span>
+                      </div>
+
+                  </div>
+                  <div id="collapseBinance" class="collapse" aria-labelledby="headingBinance" data-parent="#accordionSettings">
+                    <div class="SettingsAccordion__details">
+                      <div class="SettingsAccordion__button">Main ETH</div>
+                      <div class="SettingsAccordion__qr">0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0b</div>
+                    </div>
+                    <div class="SettingsAccordion__details">
+                      <div class="SettingsAccordion__button">Binary</div>
+                      <div class="SettingsAccordion__qr">0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0b</div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+            <button type="submit" class="btn modal-header_button tabSettings__submit">Save changes</button>
+          </div>
+
         </div>
 
         <!-- Help Block -->
 
         <div class="tab-pane fade helpBlock" id="v-pills-Help" role="tabpanel" aria-labelledby="v-pills-Help-tab">
-          <h2 class="tabHeader">Help</h2>
+          <h2 class="tabHeader ">Help</h2>
           <div class="tabDescr">Here are some frequently asked questions about cryptocurrency investments, and the most insightful and unbiased
             answers can be found in this post</div>
 
@@ -2105,33 +2268,70 @@
       </div>
     </div>
 
-        <!--modal-->
-        <div class="modal fade contactModal" id="succesfully" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close contactModal__close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  <h2 class="contactModal__header">Your message has been
-                      succesfully sent</h2>
-                </div>
+    <!--modal succesfully-->
+    <div class="modal fade contactModal" id="succesfully" tabindex="-1" role="dialog" aria-labelledby="example" aria-hidden="true">
+      <div class="modal-dialog succesfullyModal" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close contactModal__close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="succesfullyModal__img" src="/img/oka.png" alt="">
+            <h2 class="contactModal__header">Your message has been succesfully sent</h2>
+            <div class="succesfullyModal__descr">Our consultant will contact you soon!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal Google Authenticator -->
+
+    <div class="modal fade contactModal" id="Authenticator" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header ">
+            <button type="button" class="close contactModal__close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h2 class="contactModal__header Authenticator__header">Use Google Authenticator to scan the code below</h2>
+            <div class="sign_up_autentificator  login_confirm">
+              <img class="Authenticator__qr" src="img/qr.png" alt="">
+              <div class="Authenticator__descr Authenticator__descr_img">Print and Save the Code Below
               </div>
+              <form method="get" action="sign_up_confirmation_ip.html">
+                <textarea class="Authenticator__input" name="name" rows="2" disabled>U7R3B3VFZ4TY7SWIUTSO6SNHCCRZWCE C3F4P25L755BHV4TBM7TQ
+                </textarea>
+                <p class="Authenticator__descr_text">Enter your Two Factor Authentication code below</p>
+                <input class="Authenticator__input " type="text">
+                <button class="Authenticator__button">Get a new code</button>
+                <button type="submit" class="btn btn-block sign_up_confirmation_email_button Authenticator__submit">Activate</button>
+              </form>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-  <script>
 
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
- // modal succesfully
+  <script type="text/javascript">
+    // modal succesfully
 
-// $('.contactModal__submit').click(function() {
-//   $('#contact').modal('hide');
-//   $('#succesfully').modal('show');
-// });
+    $('#contact').on('submit', function () {
+      $('#contact').modal('hide');
+      $('#succesfully').modal('show');
+      return false;
+    });
 
     // select2 addNew
 
@@ -2339,13 +2539,8 @@
       return $state;
     }
   </script>
-  <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.highcharts.com/modules/exporting.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
   <script src="js/libs.min.js"></script>
+
 </body>
 
 </html>

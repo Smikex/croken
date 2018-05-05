@@ -400,6 +400,7 @@ header
     background: #0d8b41
     font-family: Proxima Nova
     font-size: 25px
+    font-weight: 400
     color: #fff
   //width: 313px
   .cancel_btn
@@ -1707,6 +1708,11 @@ p.modal_receive_p
     @media (max-width : 395.98px)
       padding: 40px 0 15px
       font-size: 35px
+    &_settings
+      text-align: left
+      flex-basis: 100% 
+      @media (max-width : 769px)
+        text-align: center
   &Descr
     display: flex
     margin: auto
@@ -1719,6 +1725,113 @@ p.modal_receive_p
     @media (max-width : 395.98px)
       font-size: 14px
       padding: 0 30px
+  &Settings
+    &__label
+      @media (max-width : 395.98px)
+        font-size: 14px !important
+    &__block
+      &_left
+        flex-basis: 46%
+        @media (max-width : 1040px)
+          flex-basis: 100%
+          
+        @media (max-width : 769px)
+          flex-basis: 100%
+          
+        @media (max-width : 395.98px)
+          flex-basis: 100%
+      &_right  
+        flex-basis: 54%
+        @media (max-width : 1040px)
+          flex-basis: 100%
+          
+        @media (max-width : 769px)
+          flex-basis: 100%
+        @media (max-width : 395.98px)
+          flex-basis: 100%  
+
+    &__wrap
+      flex-wrap: wrap
+      display: flex
+      max-width: 85%
+      margin: auto 
+    &__header
+      color: #ffffff
+      font-size: 25px
+      font-weight: 400
+      @media (max-width : 395.98px)
+        text-align: center
+    &__Form
+      @media (max-width : 1040px)
+        width: 100% !important
+    &__formText
+      display: flex
+      flex-wrap: wrap
+
+    &__formText1
+      display: flex
+      color: #ffffff
+      font-size: 16px
+      font-weight: 700
+      margin: 20px 0
+      margin-right: 15px
+     
+    &__formText2
+      color: #ffffff
+      font-size: 13px
+      font-weight: 400 
+      padding: 20px 0 20px 0  
+    &__status
+      display: flex
+      border-radius: 2px
+      color: #ffffff
+      font-size: 13px
+      font-weight: 400      
+      display: flex
+      padding: 5px 
+      width: 110px
+      height: 30px
+      align-self: center
+      justify-content: center
+      &_Deactivated
+        background-color: #ef3124
+      &_Аctivated
+        background-color: #0d8b41  
+      @media (max-width : 395.98px)
+        display: flex
+        margin-left: 0
+        margin-bottom: 15px
+    &__submit
+      display: flex
+      flex-basis: 100%
+      justify-content: center
+      @media (max-width : 395.98px)
+        max-width: 175px !important
+        font-size: 14px
+        padding: 15px
+        margin-bottom: 50px
+
+        
+    &__activate
+      color: #ffffff
+      font-size: 15px 
+      border-radius: 2px
+      background-color: #0d8b41
+      border: none
+      width: 100px
+      padding: 5px 0
+      @media (max-width : 1040px)
+        margin-bottom: 50px
+    &__submit
+      max-width: 275px 
+    &__password
+      color: #496070 !important
+      border: 1px solid #3a5364 !important
+    &__email  
+      border: 1px solid #3a5364 !important
+     
+
+
 .help
   &Block
     &__text
@@ -1749,6 +1862,7 @@ p.modal_receive_p
       @media (max-width : 395.98px)
         font-size: 16px
         font-weight: 400
+        padding-right: 20px
       &:hover
         // border-bottom: none
         text-decoration: none
@@ -1760,9 +1874,7 @@ p.modal_receive_p
           background-image: url("../img/up.png") 
           position: absolute
           margin-top: 15px
-          margin-left: 66%
-          @media (max-width : 768px)
-            margin-left: 75%
+          right: 10px
    
     &__header.collapsed
       color: #ffffff !important
@@ -1786,9 +1898,123 @@ p.modal_receive_p
       border-top: 1px dotted #4c5b66
       @media (max-width : 395.98px)
         padding: 16px 0
+      & div
+        position: relative  
     &__wrap:last-child
       border-bottom: 1px dotted #4c5b66
- 
+
+
+.Settings
+  &Accordion
+    &__wrap  
+      border-radius: 5px
+      border: 1px solid #3a5364
+      border-top: none
+      @media (max-width : 395.98px)
+        max-width: 320px
+        margin: auto
+      @media (max-width : 340.98px) 
+        max-width: 280px  
+    &__cover
+      position: relative 
+      // background-color: #1f3341
+    &__header
+      padding: 10px
+      display: flex
+      text-align: left
+      background-color: #1f3341
+      width: 100%
+      border: none
+      border-top: 1px solid #3a5364
+      box-shadow: inset 0px 10px 14px 0px rgba(0,0,0,0.2)
+      &:focus
+        opacity: 1
+      &:after
+        content: ''
+        background-image: url("../img/minus_.png")
+        position: absolute
+        height: 2px
+        right: 20px
+        width: 10px
+        margin-top: 13px      
+      &.collapsed
+        background-color: #233644
+        box-shadow: none
+        
+        &:after
+          background-image: url("../img/plus_.png")
+          height: 10px
+          margin-top: 8px
+          
+
+    &__img
+      width: 25px
+      height: auto  
+    &__name
+      padding: 3px 0 0 15px
+      color: #ffffff
+      font-size: 15px
+      font-weight: 700 
+
+    &__value
+      color: #577080
+    &__details
+      justify-content: flex-start
+      display: flex
+      flex-wrap: wrap
+      background-color: #1f3341
+      &:last-child
+        padding-bottom: 20px
+    &__button
+      flex-basis: 25%
+      position: relative
+      background: transparent
+      border: none
+      color: #fff
+      font-weight: 400
+      padding: 5px 20px 5px 50px
+      text-align: left
+      @media (max-width : 395.98px)
+        flex-basis: 100%
+
+      &:hover
+        text-decoration: underline
+      &:after
+        content: ' '
+        background-image: url("../img/editor.png")
+        position: absolute
+        width: 13px
+        height: 13px 
+        margin-left: 10px
+      &:hover:after
+        background-image: url("../img/editor_hover.png")
+    &__qr
+      flex-basis: 75%
+      padding-top: 3px
+      padding-left: 40px
+      color: #3a5364
+      font-weight: 400
+      font-size: 13px
+      @media (max-width : 395.98px)
+        word-wrap: break-word
+        display: -webkit-box
+        -webkit-line-clamp: 1
+        -webkit-box-orient: vertical
+        overflow: hidden
+        text-overflow: ellipsis
+        margin-left: 30px
+        flex-basis: 85%
+
+      &:before
+        content: ' '
+        background-image: url("../img/qr_sm.png")
+        padding-left: 16px
+        width: 16px
+        height: 16px
+        position: absolute
+        margin-left: -20px
+        margin-top: 3px
+
 .contactUs 
   justify-content: center
   align-self: center
@@ -1811,6 +2037,7 @@ p.modal_receive_p
     font-size: 25px
     font-weight: 100
     text-align: center
+    line-height: 35px
   &__label
     color: #ffffff
     font-size: 16px
@@ -1820,6 +2047,8 @@ p.modal_receive_p
     display: flex
     flex-direction: column
     width: 80%
+    &_account
+      width: 100%
   &__input
     background: transparent
     border-radius: 3px
@@ -1828,6 +2057,14 @@ p.modal_receive_p
     height: 52px
     font-size: 16px  
     padding-left: 15px
+    &[placeholder]
+      color: #496070 
+      font-size: 14px
+      font-weight: 700
+      @media (max-width : 395.98px)
+        font-size: 13px
+    &::placeholder
+      color: #496070 
     &_area
       height: 220px
       padding-top: 10px
@@ -1835,8 +2072,61 @@ p.modal_receive_p
     margin-top: -5px
     margin-bottom: 10px    
 
+.succesfully
+  &Modal
+    transform: translate(0, 40%) !important
+    &__img
+      padding: 10px 0 30px 0
+    &__descr
+      color: #ffffff
+      font-size: 16px
+      font-weight: 400   
+      padding: 20px 0 40px 0 
 
-         
+#Authenticator .sign_up_autentificator
+  padding-top: 0 !important
+
+.Authenticator
+  &__header
+    padding: 0 15px
+  &__img
+    margin: 0 0 0 10px !important
+  &__qr
+    margin-top: 25px !important
+    margin-bottom: 30px !important
+  &__descr
+    display: flex !important
+    color: #ffffff !important
+    font-size: 16px !important
+    font-weight: 400 !important
+    padding-bottom: 20px !important
+    display: flex
+    justify-content: center
+    &_text
+      margin-bottom: 10px !important 
+    &_img
+      &:after
+        content: ''
+        background-image: url("../img/rectgreen.png")
+        width: 17px
+        height: 16px
+        margin-left: 15px
+        margin-top: 3px
+
+  &__button
+    margin-top: 0px !important
+    color: #0d8b41 !important
+    font-size: 14px !important
+    font-weight: 400 !important
+    background: transparent !important
+    border: none !important
+  &__input
+    background-color: #233644 !important
+  &__submit
+    width: 314px !important 
+    margin-bottom: 40px !important 
+ 
+        
 
 @import "media.sass"
 @import "round.css"
